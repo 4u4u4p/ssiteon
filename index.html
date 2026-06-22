@@ -20,614 +20,798 @@ src="https://www.facebook.com/tr?id=2241464396625179&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Material digital completo para aprender a negociar dívidas, organizar as finanças e parar de pagar juros desnecessários. A partir de R$25,90 com acesso imediato.">
-<title>Plano Dívida Zero — Aprenda a Negociar Suas Dívidas</title>
+<meta name="description" content="Descubra como negociar suas dívidas, reduzir juros e sair do vermelho com o Método Quitar — material digital completo por menos do que você gasta num almoço.">
+<title>Dívida Zero — Pare de Pagar Juros Que Você Não Precisa Pagar</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23085041'/><text y='.9em' font-size='70' x='12'>💚</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --v1:#04342C;--v2:#085041;--v3:#0F6E56;--v4:#1D9E75;--v5:#5DCAA5;--v6:#9FE1CB;--v7:#E1F5EE;--v8:#F0FAF6;
-  --d3:#854F0B;--d4:#BA7517;--d5:#EF9F27;--d6:#FAC775;--d7:#FAEEDA;--d8:#FEF9EF;
-  --r1:#C0392B;--r7:#FDECEA;
-  --c1:#111;--c2:#333;--c3:#555;--c4:#888;--c5:#bbb;--c6:#e2e0db;--c7:#F6F5F2;--c8:#EEECEA;
-  --br:#fff;
-  --shadow-sm:0 2px 8px rgba(0,0,0,.06);
-  --shadow-md:0 6px 24px rgba(0,0,0,.09);
-  --shadow-lg:0 12px 48px rgba(0,0,0,.12);
+  --v1:#03291F;--v2:#085041;--v3:#0F6E56;--v4:#1D9E75;--v5:#5DCAA5;--v7:#E1F5EE;
+  --d3:#854F0B;--d4:#BA7517;--d5:#EF9F27;--d6:#FAC775;--d7:#FAEEDA;
+  --r1:#B91C1C;--r2:#DC2626;--r3:#FEE2E2;
+  --c1:#0D0D0D;--c2:#222;--c3:#4B5563;--c4:#9CA3AF;--c5:#D1D5DB;--c6:#E5E7EB;--c7:#F9FAFB;
+  --br:#FFFFFF;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg:0 12px 40px rgba(0,0,0,.14);
 }
 html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--c1);background:var(--br);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* AVISO TOPO */
-.aviso{background:var(--v1);color:var(--v6);text-align:center;padding:.55rem 1rem;font-size:.78rem;font-weight:600;letter-spacing:.2px}
-.aviso strong{color:var(--d6)}
+/* ── ALERTA TOPO ── */
+.alerta-topo{background:var(--r1);color:#fff;text-align:center;padding:.55rem 1rem;font-size:.8rem;font-weight:700;letter-spacing:.2px}
+.alerta-topo span{opacity:.8;font-weight:400}
 
-/* NAV */
-nav{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--c6);padding:.85rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:300}
-.logo{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:900;color:var(--v2)}
+/* ── NAV ── */
+nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--c6);padding:.9rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:500}
+.logo{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:900;color:var(--v2);letter-spacing:-.5px;line-height:1}
 .logo span{color:var(--d5)}
-.nav-pill{background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;border:none;padding:.55rem 1.4rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 3px 14px rgba(186,117,23,.3)}
-.nav-pill:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(186,117,23,.4)}
+.nav-cta{background:var(--r1);color:#fff;border:none;padding:.55rem 1.3rem;border-radius:6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.82rem;cursor:pointer;transition:background .2s;white-space:nowrap}
+.nav-cta:hover{background:#991B1B}
 
-/* HERO */
-.hero{background:linear-gradient(155deg,var(--v1) 0%,var(--v2) 50%,#0c5c48 100%);padding:5.5rem 1.5rem 7rem;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(250,199,117,.07) 0%,transparent 60%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;background:var(--c7);clip-path:ellipse(55% 100% at 50% 100%)}
-.chip{display:inline-flex;align-items:center;gap:.45rem;background:rgba(250,199,117,.1);border:1px solid rgba(250,199,117,.25);color:var(--d6);font-size:.72rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:.4rem 1.1rem;border-radius:50px;margin-bottom:1.6rem}
-.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.1rem,5.8vw,3.5rem);font-weight:900;line-height:1.06;color:#fff;margin-bottom:1.1rem;max-width:720px;margin-left:auto;margin-right:auto}
-.hero h1 em{font-style:italic;color:var(--d6)}
-.hero-lead{font-size:1.07rem;color:rgba(255,255,255,.72);max-width:510px;margin:0 auto 1.8rem;line-height:1.78}
-.hero-social{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.75);font-size:.78rem;font-weight:600;padding:.45rem 1.1rem;border-radius:50px;margin-bottom:2rem}
-.hero-social span{color:var(--d6);font-weight:800}
-.hero-precos{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
-.hp{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.12);border-radius:14px;padding:.9rem 1.5rem;text-align:center;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
-.hp:hover{border-color:var(--d5);background:rgba(250,199,117,.1);transform:translateY(-2px)}
-.hp-label{font-size:.67rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.2rem}
-.hp-val{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:900;color:var(--d6)}
-.btn-hero{display:inline-block;background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;padding:1.1rem 2.8rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.05rem;border:none;cursor:pointer;box-shadow:0 8px 36px rgba(186,117,23,.42);transition:transform .2s,box-shadow .2s;letter-spacing:.2px}
-.btn-hero:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(186,117,23,.55)}
-.hero-micro{margin-top:1rem;font-size:.76rem;color:rgba(255,255,255,.35)}
+/* ── HERO ── */
+.hero{background:var(--v1);padding:5rem 1.5rem 5.5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(29,158,117,.18) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--c7);clip-path:ellipse(60% 100% at 50% 100%)}
 
-/* TRUST BAR */
-.trust-bar{background:var(--br);border-bottom:1px solid var(--c6);padding:1rem 2rem;display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap}
-.ti{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--c3);font-weight:600}
-.ti .ti-icon{font-size:1rem}
+.hero-chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(239,159,39,.12);border:1px solid rgba(239,159,39,.3);color:var(--d6);font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:.38rem 1rem;border-radius:4px;margin-bottom:2rem}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.1rem,5.5vw,3.6rem);font-weight:900;line-height:1.06;color:#fff;margin-bottom:1.2rem;max-width:740px;margin-left:auto;margin-right:auto}
+.hero h1 em{font-style:italic;color:var(--d6);display:block}
+.hero-sub{font-size:clamp(1rem,2.5vw,1.15rem);color:rgba(255,255,255,.72);max-width:540px;margin:0 auto 1rem;line-height:1.75}
+.hero-prova-rapida{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:50px;padding:.4rem 1rem;font-size:.78rem;color:rgba(255,255,255,.55);margin-bottom:2.5rem}
 
-/* SOCIAL PROOF NUMBERS */
-.numeros{background:var(--v8);border-top:1px solid var(--v7);border-bottom:1px solid var(--v7);padding:1.5rem 1.5rem;display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap}
-.num-item{text-align:center}
-.num-val{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:900;color:var(--v2);line-height:1}
-.num-label{font-size:.73rem;color:var(--c4);font-weight:500;margin-top:.2rem}
+/* Preço hero */
+.hero-preco-bloco{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.3rem 2.5rem;margin-bottom:2rem;text-align:center}
+.hpb-de{font-size:.8rem;color:rgba(255,255,255,.38);text-decoration:line-through;margin-bottom:.1rem}
+.hpb-val{font-family:'Fraunces',serif;font-size:3.4rem;font-weight:900;color:var(--d6);line-height:1}
+.hpb-val sup{font-size:1.3rem;vertical-align:top;margin-top:.5rem}
+.hpb-desc{font-size:.75rem;color:rgba(255,255,255,.42);margin-top:.35rem;letter-spacing:.3px}
 
-/* SEÇÕES */
+.btn-principal{display:inline-block;background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;padding:1.1rem 2.8rem;border-radius:8px;font-weight:800;font-size:1.05rem;border:none;cursor:pointer;box-shadow:0 6px 32px rgba(186,117,23,.42);transition:transform .2s,box-shadow .2s;letter-spacing:.1px;line-height:1.3}
+.btn-principal:hover{transform:translateY(-3px);box-shadow:0 12px 44px rgba(186,117,23,.55)}
+.btn-principal small{display:block;font-size:.72rem;opacity:.75;font-weight:500;margin-top:.2rem}
+
+.hero-micro{margin-top:.9rem;font-size:.75rem;color:rgba(255,255,255,.33);letter-spacing:.2px}
+.hero-precos-mini{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+.hpm{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.7rem 1.2rem;text-align:center;cursor:pointer;transition:border-color .2s}
+.hpm:hover{border-color:rgba(239,159,39,.5)}
+.hpm-label{font-size:.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.42);margin-bottom:.15rem}
+.hpm-val{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:900;color:var(--d6)}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--br);border-bottom:1px solid var(--c6);padding:.9rem 1.5rem;display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap}
+.tb{display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:var(--c3);font-weight:600}
+.tb-ico{font-size:1rem}
+
+/* ── UTILS ── */
 .s{padding:5rem 1.5rem;text-align:center}
 .s.alt{background:var(--c7)}
 .s.verde{background:var(--v2);color:#fff}
-.s.dark{background:#0d0d0d;color:#fff}
-.ey{font-size:.69rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--v4);margin-bottom:.55rem}
-.s.verde .ey,.s.dark .ey{color:var(--v5)}
-h2.t{font-family:'Fraunces',serif;font-size:clamp(1.65rem,4.2vw,2.3rem);font-weight:900;line-height:1.14;margin-bottom:.55rem}
-.sub{font-size:.97rem;color:var(--c3);max-width:490px;margin:0 auto 2.8rem;line-height:1.78}
-.s.verde .sub,.s.dark .sub{color:rgba(255,255,255,.6)}
+.s.escuro{background:var(--c1);color:#fff}
+.s.dourado{background:var(--d7);border-top:1px solid #F5D78E;border-bottom:1px solid #F5D78E}
+.ey{font-size:.68rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--v4);margin-bottom:.5rem;display:block}
+.s.verde .ey,.s.escuro .ey{color:var(--v5)}
+.s.dourado .ey{color:var(--d3)}
+h2.titulo{font-family:'Fraunces',serif;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900;line-height:1.12;margin-bottom:.6rem}
+.subtitulo{font-size:.97rem;color:var(--c3);max-width:500px;margin:0 auto 3rem;line-height:1.75}
+.s.verde .subtitulo,.s.escuro .subtitulo{color:rgba(255,255,255,.62)}
 
-/* PARA QUEM */
-.checks{display:flex;flex-direction:column;gap:.75rem;max-width:540px;margin:0 auto}
-.cr{display:flex;align-items:flex-start;gap:.85rem;background:var(--br);border:1px solid var(--c6);border-radius:13px;padding:1rem 1.2rem;text-align:left;transition:border-color .2s,box-shadow .2s}
-.cr:hover{border-color:var(--v5);box-shadow:var(--shadow-sm)}
-.cri{width:30px;height:30px;border-radius:50%;background:var(--v7);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;margin-top:.05rem}
-.crt{font-size:.92rem;color:var(--c3);line-height:1.58}
-.crt strong{color:var(--c1);font-weight:700}
+/* ── SEÇÃO DOR ── */
+.dor-intro{background:#111;padding:2.5rem 1.5rem;text-align:center}
+.dor-intro p{font-family:'Fraunces',serif;font-size:clamp(1.2rem,3vw,1.65rem);font-style:italic;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto}
+.dor-intro p em{color:var(--d6);font-style:normal;font-weight:700}
 
-/* MÉTODO */
-.passos{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;max-width:860px;margin:0 auto}
-.passo{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.8rem 1.5rem;flex:1;min-width:200px;max-width:256px;text-align:left;transition:background .2s}
-.passo:hover{background:rgba(255,255,255,.09)}
-.pn-badge{display:inline-flex;width:36px;height:36px;background:rgba(250,199,117,.15);border:1px solid rgba(250,199,117,.25);border-radius:50%;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:1rem;color:var(--d6);margin-bottom:.9rem}
-.passo h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.5rem}
-.passo p{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.68}
+.dor-grid{display:flex;flex-direction:column;gap:.65rem;max-width:560px;margin:0 auto}
+.dor-item{display:flex;align-items:flex-start;gap:.85rem;background:var(--br);border:1.5px solid var(--c6);border-left:3px solid var(--r1);border-radius:10px;padding:1rem 1.15rem;text-align:left}
+.di-ico{font-size:1.25rem;flex-shrink:0;margin-top:.05rem;line-height:1}
+.di-txt{font-size:.92rem;color:var(--c2);line-height:1.55}
+.di-txt strong{color:var(--c1);font-weight:700}
+.dor-fim{font-size:.95rem;color:var(--c3);max-width:480px;margin:2rem auto 0;line-height:1.7;font-style:italic}
 
-/* ENTREGA */
-.itens{display:flex;flex-direction:column;gap:.9rem;max-width:610px;margin:0 auto 1.5rem}
-.ir{background:var(--br);border:1px solid var(--c6);border-radius:14px;padding:1.2rem 1.4rem;display:flex;align-items:flex-start;gap:1.1rem;text-align:left;transition:border-color .2s,box-shadow .2s}
-.ir:hover{border-color:var(--v5);box-shadow:var(--shadow-sm)}
-.iri{width:46px;height:46px;border-radius:12px;background:var(--v7);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
-.irt{font-weight:700;font-size:.96rem;margin-bottom:.25rem;color:var(--c1)}
-.ird{font-size:.83rem;color:var(--c3);line-height:1.58}
-.irb{display:inline-block;background:var(--d7);color:var(--d3);font-size:.67rem;font-weight:700;padding:.2rem .6rem;border-radius:50px;margin-top:.4rem;letter-spacing:.3px}
+/* ── MECANISMO / MÉTODO ── */
+.metodo-badge{display:inline-block;background:rgba(250,199,117,.15);border:1px solid rgba(250,199,117,.35);color:var(--d6);font-size:.7rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:.35rem .9rem;border-radius:4px;margin-bottom:.9rem}
+.passos{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;max-width:860px;margin:0 auto;counter-reset:passo}
+.passo{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.8rem 1.5rem;flex:1;min-width:210px;max-width:255px;text-align:left;position:relative}
+.passo::before{counter-increment:passo;content:counter(passo,"0");font-family:'Fraunces',serif;font-size:3.5rem;font-weight:900;color:rgba(255,255,255,.06);position:absolute;top:.8rem;right:1rem;line-height:1}
+.passo-num{font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--v5);margin-bottom:.8rem}
+.passo h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.45rem}
+.passo p{font-size:.85rem;color:rgba(255,255,255,.58);line-height:1.65}
 
-/* COMPARAÇÃO */
-.comp-wrap{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;max-width:640px;margin:0 auto;align-items:center}
-.cc{border-radius:18px;padding:1.7rem 1.5rem;flex:1;min-width:185px;text-align:center}
-.cc.ruim{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.08)}
-.cc.bom{background:rgba(255,255,255,.1);border:1.5px solid rgba(250,199,117,.35)}
-.ce{font-size:.69rem;text-transform:uppercase;letter-spacing:1px;opacity:.6;margin-bottom:.5rem;font-weight:700}
-.cv{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:900}
-.cc.ruim .cv{color:#F09595}
-.cc.bom .cv{color:var(--d6)}
-.cd{font-size:.78rem;opacity:.62;margin-top:.4rem;line-height:1.55}
-.cvs{font-family:'Fraunces',serif;font-size:1.1rem;color:rgba(255,255,255,.25);padding:0 .3rem}
+/* ── BENEFÍCIOS ── */
+.benef-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;max-width:820px;margin:0 auto}
+.benef{background:var(--br);border:1.5px solid var(--c6);border-radius:12px;padding:1.4rem;text-align:left;transition:border-color .2s,box-shadow .2s}
+.benef:hover{border-color:var(--v4);box-shadow:var(--shadow-md)}
+.benef-ico{width:42px;height:42px;border-radius:10px;background:var(--v7);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:.9rem}
+.benef h3{font-size:.97rem;font-weight:700;margin-bottom:.3rem;color:var(--c1)}
+.benef p{font-size:.84rem;color:var(--c3);line-height:1.6}
 
-/* PLANOS */
-.planos-wrap{display:flex;gap:1.3rem;justify-content:center;flex-wrap:wrap;max-width:940px;margin:0 auto}
-.plano-card{background:var(--br);border:2px solid var(--c6);border-radius:22px;padding:2.1rem 1.7rem;flex:1;min-width:245px;max-width:285px;text-align:left;position:relative;transition:border-color .2s,box-shadow .2s,transform .2s;display:flex;flex-direction:column}
-.plano-card:hover{border-color:var(--v4);box-shadow:0 10px 44px rgba(29,158,117,.13);transform:translateY(-3px)}
-.plano-card.destaque{border-color:var(--d5);box-shadow:0 12px 54px rgba(186,117,23,.2)}
-.plano-card.destaque:hover{box-shadow:0 18px 64px rgba(186,117,23,.28);transform:translateY(-4px)}
-.plano-pop{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:.32rem 1rem;border-radius:50px;white-space:nowrap}
-.plano-nome{font-size:.7rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--v3);margin-bottom:.4rem}
-.plano-titulo{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:900;margin-bottom:.25rem;color:var(--c1)}
-.plano-desc{font-size:.83rem;color:var(--c3);margin-bottom:1.4rem;line-height:1.58}
+/* ── O QUE VOCÊ RECEBE ── */
+.entrega-grid{display:flex;flex-direction:column;gap:.85rem;max-width:620px;margin:0 auto 2rem}
+.entrega-item{background:var(--br);border:1.5px solid var(--c6);border-radius:13px;padding:1.15rem 1.4rem;display:flex;align-items:flex-start;gap:1.1rem;text-align:left;transition:border-color .2s}
+.entrega-item:hover{border-color:var(--v4)}
+.ei-ico{width:46px;height:46px;border-radius:11px;background:var(--v7);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+.ei-titulo{font-weight:700;font-size:.97rem;margin-bottom:.2rem;color:var(--c1)}
+.ei-desc{font-size:.84rem;color:var(--c3);line-height:1.6}
+.ei-badge{display:inline-block;background:var(--d7);color:var(--d3);font-size:.67rem;font-weight:700;padding:.18rem .55rem;border-radius:4px;margin-top:.35rem;letter-spacing:.2px}
+.nota-legal{font-size:.78rem;color:var(--c4);max-width:520px;margin:0 auto;line-height:1.6;padding-top:1.2rem;border-top:1px solid var(--c6)}
+
+/* ── PARA QUEM É / NÃO É ── */
+.pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:720px;margin:0 auto}
+.pq-col{border-radius:14px;padding:1.5rem 1.3rem}
+.pq-col.sim{background:var(--v7);border:1.5px solid var(--v5)}
+.pq-col.nao{background:#FFF1F1;border:1.5px solid #FECACA}
+.pq-titulo{font-size:.75rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:1rem}
+.pq-col.sim .pq-titulo{color:var(--v2)}
+.pq-col.nao .pq-titulo{color:var(--r1)}
+.pq-item{display:flex;align-items:flex-start;gap:.6rem;font-size:.88rem;line-height:1.55;margin-bottom:.6rem}
+.pq-item:last-child{margin-bottom:0}
+.pq-col.sim .pq-item{color:var(--v2)}
+.pq-col.nao .pq-item{color:var(--r1)}
+@media(max-width:560px){.pq-grid{grid-template-columns:1fr}}
+
+/* ── COMPARAÇÃO ── */
+.comp-tabela{max-width:600px;margin:0 auto;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.comp-linha{display:flex;align-items:center;padding:1rem 1.5rem;gap:1rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.comp-linha:last-child{border-bottom:none}
+.comp-linha.header{background:rgba(255,255,255,.06);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.5)}
+.comp-desc{flex:1;font-size:.9rem;color:rgba(255,255,255,.7)}
+.comp-sem{width:90px;text-align:center;font-size:.9rem;color:#F87171;font-weight:600}
+.comp-com{width:90px;text-align:center;font-size:.9rem;color:var(--v5);font-weight:700}
+.comp-linha.header .comp-desc{color:rgba(255,255,255,.45)}
+.comp-linha.destaque-linha{background:rgba(29,158,117,.12);border-top:1px solid rgba(29,158,117,.2);border-bottom:1px solid rgba(29,158,117,.2)}
+
+/* ── 3 PLANOS ── */
+.planos-wrap{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;max-width:920px;margin:0 auto}
+.plano{background:var(--br);border:2px solid var(--c6);border-radius:18px;padding:2rem 1.6rem;flex:1;min-width:250px;max-width:285px;text-align:left;position:relative;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+.plano:hover{border-color:var(--v4);box-shadow:var(--shadow-md)}
+.plano.destaque{border-color:var(--d5);box-shadow:0 0 0 4px rgba(239,159,39,.12)}
+.plano-pop{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:.3rem 1rem;border-radius:50px;white-space:nowrap;box-shadow:0 4px 12px rgba(186,117,23,.3)}
+.plano-tag{font-size:.68rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--v3);margin-bottom:.4rem}
+.plano-nome{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:900;margin-bottom:.25rem;color:var(--c1)}
+.plano-desc{font-size:.83rem;color:var(--c3);line-height:1.55;margin-bottom:1.3rem}
 .plano-preco-de{font-size:.78rem;color:var(--c5);text-decoration:line-through;margin-bottom:.1rem}
-.plano-preco{font-family:'Fraunces',serif;font-size:2.5rem;font-weight:900;color:var(--v2);line-height:1;margin-bottom:.2rem}
-.plano-preco sup{font-size:1.05rem;vertical-align:top;margin-top:.35rem}
+.plano-preco{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:900;color:var(--v2);line-height:1;margin-bottom:.2rem}
+.plano-preco sup{font-size:1rem;vertical-align:top;margin-top:.4rem}
 .plano-pag{font-size:.74rem;color:var(--c4);margin-bottom:1.5rem}
-.plano-itens{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.7rem;flex:1}
-.pi{display:flex;align-items:flex-start;gap:.55rem;font-size:.85rem;color:var(--c2);line-height:1.45}
-.pi-check{width:19px;height:19px;border-radius:50%;background:var(--v7);color:var(--v2);display:flex;align-items:center;justify-content:center;font-size:.63rem;font-weight:900;flex-shrink:0;margin-top:.1rem}
-.pi.off{opacity:.3}
-.pi.off .pi-check{background:#f0f0f0;color:#ccc}
-.btn-plano{width:100%;padding:.95rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.96rem;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:.2px}
-.btn-plano.verde{background:linear-gradient(135deg,var(--v4),var(--v2));color:#fff;box-shadow:0 4px 20px rgba(29,158,117,.3)}
-.btn-plano.ouro{background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;box-shadow:0 4px 22px rgba(186,117,23,.32)}
+.plano-itens{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.8rem;flex:1}
+.pi{display:flex;align-items:flex-start;gap:.6rem;font-size:.86rem;color:var(--c2);line-height:1.45}
+.pi-ic{width:19px;height:19px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:900;flex-shrink:0;margin-top:.1rem}
+.pi-ic.sim{background:var(--v7);color:var(--v2)}
+.pi-ic.nao{background:#F3F4F6;color:var(--c5)}
+.pi.off{opacity:.4}
+.pi.off .pi-ic{background:#F3F4F6;color:var(--c5)}
+.btn-plano{width:100%;padding:.95rem;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.95rem;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:.1px}
+.btn-plano.v{background:linear-gradient(135deg,var(--v4),var(--v2));color:#fff;box-shadow:0 4px 16px rgba(29,158,117,.28)}
+.btn-plano.d{background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;box-shadow:0 4px 16px rgba(186,117,23,.28)}
 .btn-plano:hover{transform:translateY(-2px)}
 
-/* DEPOIMENTOS */
-.depo-grid{display:flex;gap:1.1rem;flex-wrap:wrap;justify-content:center;max-width:920px;margin:0 auto}
-.depo{background:var(--br);border:1px solid var(--c6);border-radius:16px;padding:1.6rem;flex:1;min-width:240px;max-width:285px;text-align:left;transition:box-shadow .2s}
-.depo:hover{box-shadow:var(--shadow-md)}
-.dtag{display:inline-block;background:var(--v7);color:var(--v2);font-size:.67rem;font-weight:800;padding:.22rem .65rem;border-radius:50px;margin-bottom:.75rem;letter-spacing:.3px}
-.dstars{color:var(--d5);font-size:.92rem;letter-spacing:2px;margin-bottom:.75rem}
-.dtxt{font-size:.88rem;color:#2a2a2a;line-height:1.7;margin-bottom:1.1rem;font-style:italic}
-.dautor{display:flex;align-items:center;gap:.65rem}
-.dav{width:38px;height:38px;border-radius:50%;background:var(--v7);color:var(--v2);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.82rem;flex-shrink:0}
-.davnome{font-weight:700;font-size:.86rem}
-.davloc{font-size:.72rem;color:var(--c4)}
+/* ── PROVA SOCIAL ── */
+.depo-grid{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;max-width:920px;margin:0 auto}
+.depo{background:var(--br);border:1.5px solid var(--c6);border-radius:14px;padding:1.5rem;flex:1;min-width:240px;max-width:285px;text-align:left;box-shadow:var(--shadow-sm)}
+.depo-resultado{display:inline-block;background:var(--v7);color:var(--v2);font-size:.68rem;font-weight:800;padding:.2rem .6rem;border-radius:4px;margin-bottom:.7rem;letter-spacing:.3px;text-transform:uppercase}
+.depo-stars{color:var(--d5);font-size:.95rem;letter-spacing:2px;margin-bottom:.8rem}
+.depo-txt{font-size:.9rem;color:#1a1a1a;line-height:1.65;margin-bottom:1.1rem;font-style:italic}
+.depo-autor{display:flex;align-items:center;gap:.65rem}
+.dav{width:36px;height:36px;border-radius:50%;background:var(--v7);color:var(--v2);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.82rem;flex-shrink:0}
+.dav-nome{font-weight:700;font-size:.86rem;color:var(--c1)}
+.dav-local{font-size:.74rem;color:var(--c4)}
+.prova-aviso{display:inline-flex;align-items:center;gap:.5rem;background:var(--d7);border:1px solid #F5D78E;color:#78350F;font-size:.75rem;font-weight:600;padding:.38rem .85rem;border-radius:6px;margin-bottom:2rem}
+.prova-nota{margin-top:2rem;font-size:.77rem;color:var(--c4);max-width:520px;margin-left:auto;margin-right:auto;line-height:1.65}
 
-/* GARANTIA */
-.gar-box{max-width:480px;margin:0 auto;border:1px solid rgba(250,199,117,.2);border-radius:20px;padding:2.4rem 2rem;background:rgba(255,255,255,.04);position:relative;overflow:hidden}
-.gar-box::before{content:'';position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:radial-gradient(circle,rgba(250,199,117,.08),transparent);border-radius:50%}
-.gar-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(250,199,117,.12);border:1px solid rgba(250,199,117,.2);color:var(--d6);font-size:.7rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:.35rem .9rem;border-radius:50px;margin-bottom:1.2rem}
+/* ── GARANTIA ── */
+.garantia-card{max-width:520px;margin:0 auto;border:1.5px solid rgba(255,255,255,.1);border-radius:18px;padding:2.5rem 2rem;background:rgba(255,255,255,.04);text-align:center}
+.garantia-ico{font-size:3rem;margin-bottom:1rem}
 
-/* FAQ */
-.faq-lista{max-width:650px;margin:0 auto;display:flex;flex-direction:column;gap:.75rem}
-.faq-item{background:var(--br);border:1px solid var(--c6);border-radius:13px;overflow:hidden;transition:border-color .2s}
-.faq-item:hover{border-color:var(--v5)}
-.faq-item.open{border-color:var(--v4)}
-.faq-q{padding:1.05rem 1.25rem;font-weight:600;font-size:.93rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;gap:1rem}
-.faq-ico{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--v4);color:var(--v4);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:300;flex-shrink:0;transition:transform .3s,background .2s,color .2s}
+/* ── FAQ ── */
+.faq-wrap{max-width:660px;margin:0 auto;display:flex;flex-direction:column;gap:.65rem}
+.faq-item{background:var(--br);border:1.5px solid var(--c6);border-radius:11px;overflow:hidden}
+.faq-q{padding:1.05rem 1.25rem;font-weight:700;font-size:.92rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;color:var(--c1);gap:.5rem}
+.faq-ico{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--v4);color:var(--v4);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:300;flex-shrink:0;transition:transform .3s,background .2s}
 .faq-item.open .faq-ico{transform:rotate(45deg);background:var(--v4);color:#fff}
-.faq-r{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
-.faq-item.open .faq-r{max-height:300px;padding:0 1.25rem 1.2rem}
-.faq-r p{font-size:.88rem;color:var(--c3);line-height:1.75}
+.faq-r{max-height:0;overflow:hidden;transition:max-height .38s ease,padding .3s}
+.faq-item.open .faq-r{max-height:280px;padding:0 1.25rem 1.1rem}
+.faq-r p{font-size:.88rem;color:var(--c3);line-height:1.7}
 
-/* CTA FINAL */
-.cta-final{background:linear-gradient(155deg,var(--v1) 0%,var(--v2) 55%,#0c5c48 100%);padding:6rem 1.5rem;text-align:center;color:#fff;position:relative;overflow:hidden}
-.cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(250,199,117,.06),transparent 55%);pointer-events:none}
-.cta-final h2{font-family:'Fraunces',serif;font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;margin-bottom:.9rem;line-height:1.1}
+/* ── CTA FINAL ── */
+.cta-final{background:var(--v1);padding:5.5rem 1.5rem;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(29,158,117,.15),transparent 70%);pointer-events:none}
+.cta-final h2{font-family:'Fraunces',serif;font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;margin-bottom:.9rem;line-height:1.1;position:relative}
 .cta-final h2 em{font-style:italic;color:var(--d6)}
-.cta-final p{color:rgba(255,255,255,.65);font-size:1rem;max-width:430px;margin:0 auto 2.4rem;line-height:1.78}
+.cta-final p{color:rgba(255,255,255,.68);font-size:1rem;max-width:430px;margin:0 auto 2.2rem;line-height:1.75;position:relative}
 
-/* FOOTER */
-footer{background:#080808;color:#444;text-align:center;padding:2.4rem 1.5rem;font-size:.78rem;line-height:1.9}
-.fl{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:.8rem}
-.fl a{color:#555;text-decoration:underline;font-size:.77rem;transition:color .2s}
-.fl a:hover{color:#888}
-.fd{font-size:.7rem;color:#2a2a2a;max-width:600px;margin:.9rem auto 0;line-height:1.7}
+/* ── FOOTER ── */
+footer{background:#060606;color:#444;text-align:center;padding:2rem 1.5rem;font-size:.78rem;line-height:1.9}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:.8rem}
+.footer-links a{color:#555;text-decoration:underline;font-size:.77rem}
+.footer-disc{font-size:.7rem;color:#252525;max-width:600px;margin:.9rem auto 0;line-height:1.7}
 
-/* MODAL CHECKOUT */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:1000;align-items:center;justify-content:center;padding:1rem}
-.modal-overlay.ativo{display:flex}
-.modal{background:var(--br);border-radius:22px;padding:2.1rem;width:100%;max-width:430px;position:relative;max-height:92vh;overflow-y:auto}
-.modal-close{position:absolute;top:1rem;right:1rem;background:var(--c7);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--c3);transition:background .2s}
-.modal-close:hover{background:var(--c6)}
+/* ── MODAL CHECKOUT ── */
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;align-items:flex-end;justify-content:center;padding:0}
+.modal-ov.ativo{display:flex}
+@media(min-width:600px){.modal-ov{align-items:center;padding:1rem}}
+.modal{background:var(--br);border-radius:20px 20px 0 0;padding:2rem 1.5rem 2.5rem;width:100%;max-width:440px;position:relative;max-height:92vh;overflow-y:auto}
+@media(min-width:600px){.modal{border-radius:20px}}
+.modal-handle{width:40px;height:4px;background:var(--c5);border-radius:4px;margin:0 auto 1.5rem;display:block}
+@media(min-width:600px){.modal-handle{display:none}}
+.modal-close{position:absolute;top:1.1rem;right:1.1rem;background:var(--c7);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--c3)}
 .modal h3{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:900;margin-bottom:.3rem;color:var(--c1)}
-.modal-plano-info{font-size:.82rem;color:var(--c3);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--c6)}
-.modal-plano-info strong{color:var(--v2)}
+.modal-info{font-size:.82rem;color:var(--c3);margin-bottom:1.6rem;padding-bottom:1rem;border-bottom:1px solid var(--c6);line-height:1.5}
+.modal-info strong{color:var(--v2)}
 .step{display:none}
 .step.ativo{display:block}
-label{display:block;font-size:.82rem;font-weight:700;color:var(--c2);margin-bottom:.4rem}
-input{width:100%;border:1.5px solid var(--c6);border-radius:11px;padding:.78rem 1rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.93rem;color:var(--c1);outline:none;transition:border-color .2s,box-shadow .2s;margin-bottom:1rem}
-input:focus{border-color:var(--v4);box-shadow:0 0 0 3px rgba(29,158,117,.1)}
-.erro-msg{font-size:.78rem;color:#e24b4a;margin-top:-.7rem;margin-bottom:.8rem;font-weight:600}
-.btn-modal{width:100%;background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;padding:1.05rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.96rem;border:none;cursor:pointer;transition:opacity .2s,transform .2s;box-shadow:0 4px 18px rgba(186,117,23,.3)}
-.btn-modal:hover:not(:disabled){transform:translateY(-1px)}
+label{display:block;font-size:.82rem;font-weight:700;color:var(--c2);margin-bottom:.35rem}
+input[type=text]{width:100%;border:1.5px solid var(--c6);border-radius:9px;padding:.78rem 1rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.93rem;color:var(--c1);outline:none;transition:border-color .2s;margin-bottom:1.1rem;background:var(--br)}
+input[type=text]:focus{border-color:var(--v4)}
+.erro-msg{font-size:.78rem;color:var(--r1);margin-top:-.8rem;margin-bottom:.9rem;font-weight:500}
+.btn-modal{width:100%;background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;padding:1.05rem;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.97rem;border:none;cursor:pointer;transition:opacity .2s;box-shadow:0 4px 20px rgba(186,117,23,.3)}
 .btn-modal:disabled{opacity:.5;cursor:not-allowed}
 .qr-wrap{text-align:center;margin-bottom:1.2rem}
 .qr-wrap img{width:185px;height:185px;border-radius:12px;border:1px solid var(--c6)}
-.copypaste-box{background:var(--c7);border:1px solid var(--c6);border-radius:11px;padding:.85rem 1rem;font-size:.72rem;color:var(--c3);word-break:break-all;margin-bottom:.8rem;line-height:1.5;cursor:pointer;transition:background .2s}
+.qr-instr{font-size:.82rem;color:var(--c3);margin-bottom:.8rem;line-height:1.6}
+.copypaste-box{background:var(--c7);border:1.5px solid var(--c6);border-radius:9px;padding:.85rem 1rem;font-size:.72rem;color:var(--c3);word-break:break-all;margin-bottom:.8rem;line-height:1.5;cursor:pointer;transition:background .2s;text-align:left}
 .copypaste-box:hover{background:var(--v7)}
-.btn-copiar{width:100%;background:var(--v4);color:#fff;border:none;padding:.88rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.93rem;cursor:pointer;margin-bottom:.8rem;transition:background .2s}
-.btn-copiar:hover{background:var(--v3)}
-.status-box{text-align:center;padding:1rem;border-radius:13px;font-size:.88rem;font-weight:600}
+.btn-copiar{width:100%;background:var(--v4);color:#fff;border:none;padding:.88rem;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.92rem;cursor:pointer;margin-bottom:.8rem;transition:background .2s}
+.btn-copiar:hover{background:var(--v2)}
+.status-box{text-align:center;padding:1rem;border-radius:10px;font-size:.88rem;font-weight:600}
 .status-box.pendente{background:#FFF8EC;color:var(--d3)}
-.status-box.erro{background:#FEF0F0;color:#c0392b}
-.loader{display:inline-block;width:16px;height:16px;border:2px solid rgba(0,0,0,.1);border-top-color:var(--v4);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:.4rem}
+.status-box.erro{background:#FEF2F2;color:var(--r1)}
+.loader{display:inline-block;width:16px;height:16px;border:2.5px solid rgba(0,0,0,.1);border-top-color:var(--v4);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:.4rem}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* STICKY MOBILE CTA */
-.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--v1);padding:.9rem 1.2rem;z-index:200;border-top:1px solid var(--v3)}
-.sticky-cta button{width:100%;background:linear-gradient(135deg,var(--d5),var(--d3));color:#fff;border:none;padding:.85rem;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.95rem;cursor:pointer}
 @media(max-width:600px){
-  .sticky-cta{display:block}
   .planos-wrap{flex-direction:column;align-items:center}
-  .plano-card{max-width:100%}
+  .plano{max-width:100%}
   nav{padding:.75rem 1rem}
-  .numeros{gap:1.5rem}
-  body{padding-bottom:70px}
+  .s{padding:3.5rem 1.2rem}
+  .comp-tabela{font-size:.82rem}
 }
-
-/* FADE IN ANIMATION */
-.fade-in{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
-.fade-in.visible{opacity:1;transform:none}
 </style>
 </head>
 <body>
 
-<div class="aviso">📦 Produto digital — <strong>acesso imediato</strong> após o Pix · Garantia de 7 dias</div>
+<!-- ALERTA TOPO -->
+<div class="alerta-topo">🔥 Oferta de lançamento ativa <span>— preços sobem em breve</span></div>
 
+<!-- NAV -->
 <nav>
   <div class="logo">Dívida<span>Zero</span></div>
-  <button class="nav-pill" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">Ver planos →</button>
+  <button class="nav-cta" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">Quero sair das dívidas →</button>
 </nav>
 
-<!-- HERO -->
+<!-- ════════════════════
+     HERO
+════════════════════ -->
 <section class="hero">
-  <div class="chip">✦ Material Digital Educativo</div>
-  <h1>Chega de dívida te impedindo<br>de <em>viver tranquilo.</em></h1>
-  <p class="hero-lead">Aprenda a negociar, organizar e sair do ciclo das dívidas com um material completo — scripts prontos, planilha financeira e guia passo a passo.</p>
-  <div class="hero-social">
-    <span>847+</span> pessoas já acessaram este material
+  <div class="hero-chip">✦ Método Quitar — Material 100% Digital</div>
+
+  <h1>
+    Chega de pagar juros que você não precisa pagar.
+    <em>Aprenda a negociar suas dívidas do jeito certo.</em>
+  </h1>
+
+  <p class="hero-sub">
+    Um guia prático com scripts de negociação, planilha financeira e método passo a passo — para quem quer sair das dívidas sem contratar ninguém e sem enrolação.
+  </p>
+
+  <div class="hero-prova-rapida">
+    ⭐ +500 pessoas já usaram o método &nbsp;·&nbsp; Acesso imediato após o Pix
   </div>
-  <div class="hero-precos">
-    <div class="hp" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
-      <div class="hp-label">Essencial</div>
-      <div class="hp-val">R$25,90</div>
+
+  <div class="hero-precos-mini">
+    <div class="hpm" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
+      <div class="hpm-label">Essencial</div>
+      <div class="hpm-val">R$25,90</div>
     </div>
-    <div class="hp" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
-      <div class="hp-label">Completo</div>
-      <div class="hp-val">R$47,90</div>
+    <div class="hpm" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
+      <div class="hpm-label">Completo</div>
+      <div class="hpm-val">R$47,90</div>
     </div>
-    <div class="hp" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
-      <div class="hp-label">Master</div>
-      <div class="hp-val">R$89,90</div>
+    <div class="hpm" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
+      <div class="hpm-label">Master</div>
+      <div class="hpm-val">R$89,90</div>
     </div>
   </div>
-  <button class="btn-hero" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">Quero começar agora →</button>
-  <div class="hero-micro">🔒 Pix seguro &nbsp;·&nbsp; Garantia de 7 dias &nbsp;·&nbsp; Acesso imediato</div>
+
+  <button class="btn-principal" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
+    Ver os planos e começar agora
+    <small>🔒 Garantia de 7 dias · Acesso imediato</small>
+  </button>
+
+  <div class="hero-micro">Produto educacional digital · Não substitui assessoria jurídica ou financeira</div>
 </section>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="ti"><span class="ti-icon">🔒</span> Compra 100% segura</div>
-  <div class="ti"><span class="ti-icon">📦</span> Acesso imediato via Pix</div>
-  <div class="ti"><span class="ti-icon">↩</span> 7 dias de garantia</div>
-  <div class="ti"><span class="ti-icon">📱</span> Funciona no celular</div>
+  <div class="tb"><span class="tb-ico">🔒</span> Compra 100% segura</div>
+  <div class="tb"><span class="tb-ico">📦</span> Acesso imediato via Pix</div>
+  <div class="tb"><span class="tb-ico">↩</span> Garantia de 7 dias</div>
+  <div class="tb"><span class="tb-ico">📱</span> Funciona no celular</div>
+  <div class="tb"><span class="tb-ico">🏆</span> +500 clientes</div>
 </div>
 
-<!-- NÚMEROS -->
-<div class="numeros fade-in">
-  <div class="num-item"><div class="num-val">847+</div><div class="num-label">materiais entregues</div></div>
-  <div class="num-item"><div class="num-val">4,9★</div><div class="num-label">avaliação média</div></div>
-  <div class="num-item"><div class="num-val">12</div><div class="num-label">scripts de negociação</div></div>
-  <div class="num-item"><div class="num-val">R$25,90</div><div class="num-label">a partir de</div></div>
+<!-- ════════════════════
+     DOR
+════════════════════ -->
+<div class="dor-intro">
+  <p>Você não está endividado por ser irresponsável. Você está endividado porque <em>ninguém te ensinou como negociar.</em></p>
 </div>
 
-<!-- PARA QUEM -->
 <section class="s alt">
-  <div class="ey">Este material é pra você se…</div>
-  <h2 class="t">Você se identifica com alguma<br>dessas situações?</h2>
-  <p class="sub">A maioria das pessoas não sai das dívidas por falta de vontade — mas por não saber exatamente o que fazer e o que falar.</p>
-  <div class="checks fade-in">
-    <div class="cr"><div class="cri">😰</div><div class="crt">Tem dívidas acumulando e <strong>não sabe qual priorizar primeiro</strong></div></div>
-    <div class="cr"><div class="cri">📞</div><div class="crt">Recebe ligações de cobrança e <strong>não sabe o que responder</strong></div></div>
-    <div class="cr"><div class="cri">💸</div><div class="crt">Sente que os juros crescem mais rápido do que consegue pagar</div></div>
-    <div class="cr"><div class="cri">🤷</div><div class="crt">Já tentou negociar com o banco, mas <strong>não sabia o que pedir</strong></div></div>
-    <div class="cr"><div class="cri">📋</div><div class="crt">Quer organizar as finanças mas <strong>não sabe por onde começar</strong></div></div>
-    <div class="cr"><div class="cri">😓</div><div class="crt">Fica com <strong>aquela angústia constante</strong> de dever sem ver saída</div></div>
+  <span class="ey">Você se identifica?</span>
+  <h2 class="titulo">Esses pensamentos passam pela sua cabeça?</h2>
+  <p class="subtitulo">Se você marcou mentalmente qualquer um desses, o Dívida Zero foi feito pra você.</p>
+
+  <div class="dor-grid">
+    <div class="dor-item"><div class="di-ico">😰</div><div class="di-txt">Acorda pensando nas dívidas e <strong>não sabe nem qual pagar primeiro</strong></div></div>
+    <div class="dor-item"><div class="di-ico">📵</div><div class="di-txt">Não atende número desconhecido com <strong>medo de ser cobrança</strong></div></div>
+    <div class="dor-item"><div class="di-ico">💸</div><div class="di-txt">Os juros crescem mais rápido do que você consegue pagar — e parece <strong>impossível sair do buraco</strong></div></div>
+    <div class="dor-item"><div class="di-ico">🤷</div><div class="di-txt">Já tentou falar com o banco, mas <strong>não sabia o que pedir</strong> e acabou aceitando condições ruins</div></div>
+    <div class="dor-item"><div class="di-ico">😔</div><div class="di-txt">Sente vergonha de falar sobre dinheiro com a família porque <strong>a situação tá feia</strong></div></div>
+    <div class="dor-item"><div class="di-ico">🚫</div><div class="di-txt">Teve crédito negado, não consegue cartão, e o <strong>nome sujo trava tudo</strong></div></div>
   </div>
+
+  <p class="dor-fim">A boa notícia: isso tem solução. E é mais simples do que parece — quando você sabe o que está fazendo.</p>
 </section>
 
-<!-- MÉTODO -->
+<!-- ════════════════════
+     MÉTODO
+════════════════════ -->
 <section class="s verde">
-  <div class="ey">Como funciona</div>
-  <h2 class="t" style="color:#fff">Três etapas para retomar<br>o controle das suas finanças</h2>
-  <p class="sub">Sem enrolação, sem linguagem complicada. Pensado para funcionar na realidade do brasileiro.</p>
-  <div class="passos fade-in">
+  <div class="metodo-badge">✦ Método Quitar</div>
+  <h2 class="titulo" style="color:#fff">3 passos para parar de ser refém dos juros</h2>
+  <p class="subtitulo">Sem linguagem de economista. Sem planilha complicada. Sem precisar entender de finanças.</p>
+
+  <div class="passos">
     <div class="passo">
-      <div class="pn-badge">1</div>
-      <h3>Entenda o que você deve</h3>
-      <p>Mapeie cada dívida, entenda os juros reais e descubra qual está te custando mais — antes de pagar qualquer coisa.</p>
+      <div class="passo-num">Passo 01</div>
+      <h3>Mapeie o que você deve</h3>
+      <p>Descubra exatamente quanto você deve, quais juros estão te destruindo e por qual dívida começar a negociar.</p>
     </div>
     <div class="passo">
-      <div class="pn-badge">2</div>
-      <h3>Negocie com confiança</h3>
-      <p>Use os 12 scripts prontos para saber exatamente o que falar ao ligar para o banco. Sem travar, sem aceitar a primeira proposta.</p>
+      <div class="passo-num">Passo 02</div>
+      <h3>Negocie com script na mão</h3>
+      <p>Use os roteiros prontos para ligar pro banco sabendo exatamente o que pedir — sem travar, sem aceitar condição ruim.</p>
     </div>
     <div class="passo">
-      <div class="pn-badge">3</div>
+      <div class="passo-num">Passo 03</div>
       <h3>Organize para não voltar</h3>
-      <p>Com a planilha e o método, você cria hábitos financeiros simples e evita cair nas mesmas armadilhas no futuro.</p>
+      <p>Com a planilha e o método, você controla o dinheiro mês a mês e para de cair nas mesmas armadilhas.</p>
     </div>
   </div>
 </section>
 
-<!-- O QUE VOCÊ RECEBE -->
+<!-- ════════════════════
+     BENEFÍCIOS
+════════════════════ -->
+<section class="s">
+  <span class="ey">Por que funciona</span>
+  <h2 class="titulo">O que muda na sua vida com o Dívida Zero</h2>
+  <p class="subtitulo">Não é promessa. É o que acontece quando você finalmente tem as informações certas.</p>
+
+  <div class="benef-grid">
+    <div class="benef">
+      <div class="benef-ico">🧠</div>
+      <h3>Você para de agir no escuro</h3>
+      <p>Entende a real situação das suas dívidas e sabe exatamente o que fazer — sem achismo, sem tentativa e erro.</p>
+    </div>
+    <div class="benef">
+      <div class="benef-ico">💬</div>
+      <h3>Você sabe o que falar pro banco</h3>
+      <p>Com os scripts prontos, você entra na negociação preparado — e consegue condições que antes nem sabia que eram possíveis.</p>
+    </div>
+    <div class="benef">
+      <div class="benef-ico">📉</div>
+      <h3>Você para de pagar juros desnecessários</h3>
+      <p>Aprende a priorizar as dívidas certas e evita pagar mais do que precisa para credores que aceitam negociar.</p>
+    </div>
+    <div class="benef">
+      <div class="benef-ico">📊</div>
+      <h3>Você enxerga pra onde o dinheiro vai</h3>
+      <p>A planilha deixa tudo visível — dívidas, prazos, prioridades — sem mistério e sem surpresa no fim do mês.</p>
+    </div>
+    <div class="benef">
+      <div class="benef-ico">😮‍💨</div>
+      <h3>Você dorme mais tranquilo</h3>
+      <p>Quando você tem um plano, a ansiedade diminui. Você deixa de reagir às dívidas e começa a agir sobre elas.</p>
+    </div>
+    <div class="benef">
+      <div class="benef-ico">🔄</div>
+      <h3>Você quebra o ciclo de vez</h3>
+      <p>O método de organização financeira te ensina a não voltar pra mesma situação — é uma mudança de hábito, não só uma "dica".</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════
+     PARA QUEM É
+════════════════════ -->
 <section class="s alt">
-  <div class="ey">O que está incluído</div>
-  <h2 class="t">Tudo que você recebe<br>no pacote digital</h2>
-  <p class="sub">Material completo para consultar no celular, quantas vezes precisar. Acesso imediato após o pagamento.</p>
-  <div class="itens fade-in">
-    <div class="ir">
-      <div class="iri">📘</div>
-      <div>
-        <div class="irt">Guia Dívida Zero — Passo a Passo</div>
-        <div class="ird">PDF com linguagem simples e direta explicando como priorizar dívidas, entender os juros reais e montar um plano de pagamento que cabe no seu bolso.</div>
-        <div class="irb">PDF · Acesso imediato</div>
-      </div>
+  <span class="ey">Para quem é</span>
+  <h2 class="titulo">Esse material é pra você — e para quem não é</h2>
+  <p class="subtitulo">Honestidade acima de tudo. Não queremos vender pra quem não vai se beneficiar.</p>
+
+  <div class="pq-grid">
+    <div class="pq-col sim">
+      <div class="pq-titulo">✅ É pra você se…</div>
+      <div class="pq-item"><span>→</span> Tem dívidas no cartão, banco, carnê ou empréstimo</div>
+      <div class="pq-item"><span>→</span> Quer aprender a negociar sem depender de ninguém</div>
+      <div class="pq-item"><span>→</span> Nunca organizou as finanças e quer começar do zero</div>
+      <div class="pq-item"><span>→</span> Tentou negociar antes mas não sabia o que pedir</div>
+      <div class="pq-item"><span>→</span> Quer entender os juros e parar de ser enganado</div>
     </div>
-    <div class="ir">
-      <div class="iri">💬</div>
-      <div>
-        <div class="irt">12 Scripts de Negociação Prontos</div>
-        <div class="ird">Roteiros completos para usar ao ligar para o banco — como pedir desconto, propor parcelamento e conduzir a conversa a seu favor sem improviso.</div>
-        <div class="irb">PDF · 12 roteiros prontos</div>
-      </div>
-    </div>
-    <div class="ir">
-      <div class="iri">📊</div>
-      <div>
-        <div class="irt">Planilha de Controle Financeiro</div>
-        <div class="ird">Planilha editável (funciona no Google Sheets e no Excel) para mapear todas as dívidas e acompanhar o progresso mês a mês de forma visual.</div>
-        <div class="irb">Google Sheets + Excel</div>
-      </div>
-    </div>
-    <div class="ir">
-      <div class="iri">🧭</div>
-      <div>
-        <div class="irt">Método de Organização Financeira</div>
-        <div class="ird">Guia prático com estratégias para criar hábitos financeiros sustentáveis e não cair em novas dívidas depois que resolver as atuais.</div>
-        <div class="irb">PDF · Bônus incluso</div>
-      </div>
+    <div class="pq-col nao">
+      <div class="pq-titulo">❌ Não é pra você se…</div>
+      <div class="pq-item"><span>→</span> Procura garantia de que vai limpar o nome (ninguém pode prometer isso)</div>
+      <div class="pq-item"><span>→</span> Tem dívida com processo judicial em andamento</div>
+      <div class="pq-item"><span>→</span> Espera que alguém resolva por você sem esforço</div>
+      <div class="pq-item"><span>→</span> Quer assessoria jurídica ou financeira profissional</div>
     </div>
   </div>
 </section>
 
-<!-- COMPARAÇÃO DE CUSTO -->
+<!-- ════════════════════
+     O QUE VOCÊ RECEBE
+════════════════════ -->
+<section class="s">
+  <span class="ey">O que está incluído</span>
+  <h2 class="titulo">Tudo que você recebe no pacote digital</h2>
+  <p class="subtitulo">Acesso imediato após o Pix. Funciona no celular. Sem prazo de validade.</p>
+
+  <div class="entrega-grid">
+    <div class="entrega-item">
+      <div class="ei-ico">📘</div>
+      <div>
+        <div class="ei-titulo">Guia Dívida Zero — Passo a Passo</div>
+        <div class="ei-desc">PDF com linguagem simples que explica como mapear suas dívidas, entender os juros reais e montar um plano de pagamento que cabe no seu orçamento.</div>
+        <div class="ei-badge">PDF · Acesso imediato</div>
+      </div>
+    </div>
+    <div class="entrega-item">
+      <div class="ei-ico">💬</div>
+      <div>
+        <div class="ei-titulo">12 Scripts de Negociação Prontos</div>
+        <div class="ei-desc">Roteiros completos para ligar ou mandar mensagem ao banco, financeira ou credor — sabendo o que pedir, como argumentar e como não cair em armadilha.</div>
+        <div class="ei-badge">PDF · 12 modelos diferentes</div>
+      </div>
+    </div>
+    <div class="entrega-item">
+      <div class="ei-ico">📊</div>
+      <div>
+        <div class="ei-titulo">Planilha de Controle Financeiro</div>
+        <div class="ei-desc">Planilha editável no Google Sheets e Excel para mapear todas as dívidas, acompanhar pagamentos e ter visibilidade real do que você deve e quando quita.</div>
+        <div class="ei-badge">Google Sheets + Excel · Editável</div>
+      </div>
+    </div>
+    <div class="entrega-item">
+      <div class="ei-ico">🧭</div>
+      <div>
+        <div class="ei-titulo">Método de Organização Financeira</div>
+        <div class="ei-desc">Guia bônus com estratégias práticas para controlar o dinheiro mês a mês e evitar voltar para as mesmas dívidas no futuro.</div>
+        <div class="ei-badge">PDF · Bônus incluso</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="nota-legal">⚠️ Produto educacional digital. O conteúdo orienta e ensina — não substitui assessoria jurídica ou financeira profissional.</p>
+</section>
+
+<!-- ════════════════════
+     COMPARAÇÃO
+════════════════════ -->
 <section class="s verde">
-  <div class="ey">O custo de não agir</div>
-  <h2 class="t" style="color:#fff">Quanto você paga de juros<br>por mês sem negociar?</h2>
-  <p class="sub">Adiar uma decisão também tem custo — e ele cresce todo mês.</p>
-  <div class="comp-wrap fade-in">
-    <div class="cc ruim">
-      <div class="ce">Juros pagos sem negociar</div>
-      <div class="cv">R$300–800</div>
-      <div class="cd">todo mês, sem reduzir</div>
+  <span class="ey">A conta que você precisa fazer</span>
+  <h2 class="titulo" style="color:#fff">Quanto custa não resolver suas dívidas?</h2>
+  <p class="subtitulo">O custo real não é o material. É continuar pagando juros todo mês sem saber negociar.</p>
+
+  <div class="comp-tabela">
+    <div class="comp-linha header">
+      <div class="comp-desc">Situação</div>
+      <div class="comp-sem">Sem o método</div>
+      <div class="comp-com">Com o método</div>
     </div>
-    <div class="cvs">vs</div>
-    <div class="cc bom">
-      <div class="ce">Custo do material completo</div>
-      <div class="cv">R$25,90</div>
-      <div class="cd">pagamento único · acesso para sempre</div>
+    <div class="comp-linha">
+      <div class="comp-desc">Juros pagos por mês</div>
+      <div class="comp-sem">R$300–800</div>
+      <div class="comp-com">Negociado ↓</div>
+    </div>
+    <div class="comp-linha">
+      <div class="comp-desc">Sabe o que pedir ao banco?</div>
+      <div class="comp-sem">❌ Não</div>
+      <div class="comp-com">✅ Sim</div>
+    </div>
+    <div class="comp-linha">
+      <div class="comp-desc">Tem plano de pagamento?</div>
+      <div class="comp-sem">❌ Não</div>
+      <div class="comp-com">✅ Sim</div>
+    </div>
+    <div class="comp-linha">
+      <div class="comp-desc">Controle financeiro mensal</div>
+      <div class="comp-sem">❌ Zero</div>
+      <div class="comp-com">✅ Planilha</div>
+    </div>
+    <div class="comp-linha destaque-linha">
+      <div class="comp-desc" style="color:#fff;font-weight:700">Custo de mudar isso</div>
+      <div class="comp-sem" style="color:#F87171;font-size:1rem">∞ / mês</div>
+      <div class="comp-com" style="color:var(--d6);font-size:1rem">R$25,90</div>
     </div>
   </div>
 </section>
 
-<!-- PLANOS -->
-<section class="s" id="planos">
-  <div class="ey">Escolha seu plano</div>
-  <h2 class="t">Comece pelo que cabe<br>no seu bolso agora</h2>
-  <p class="sub">Todos os planos têm acesso imediato após o Pix e garantia de 7 dias sem perguntas.</p>
+<!-- ════════════════════
+     3 PLANOS
+════════════════════ -->
+<section class="s alt" id="planos">
+  <span class="ey">Escolha seu plano</span>
+  <h2 class="titulo">Comece pelo que cabe no seu bolso agora</h2>
+  <p class="subtitulo">Todos os planos com acesso imediato via Pix e garantia de 7 dias.</p>
 
-  <div class="planos-wrap fade-in">
+  <div class="planos-wrap">
 
-    <div class="plano-card">
-      <div class="plano-nome">Essencial</div>
-      <div class="plano-titulo">Dívida Zero Start</div>
-      <div class="plano-desc">Para quem quer começar a entender e organizar as dívidas com o essencial.</div>
+    <!-- ESSENCIAL -->
+    <div class="plano">
+      <div class="plano-tag">Essencial</div>
+      <div class="plano-nome">Dívida Zero Start</div>
+      <div class="plano-desc">Para quem quer entender a situação e começar a se organizar com o essencial.</div>
       <div class="plano-preco-de">De R$67,00</div>
       <div class="plano-preco"><sup>R$</sup>25,90</div>
       <div class="plano-pag">pagamento único via Pix</div>
       <div class="plano-itens">
-        <div class="pi"><div class="pi-check">✓</div>Guia Dívida Zero — Passo a Passo</div>
-        <div class="pi"><div class="pi-check">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi off"><div class="pi-check">—</div>Scripts de Negociação</div>
-        <div class="pi off"><div class="pi-check">—</div>Método de Organização</div>
-        <div class="pi off"><div class="pi-check">—</div>Suporte prioritário</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Guia Dívida Zero (PDF)</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Planilha de Controle Financeiro</div>
+        <div class="pi off"><div class="pi-ic nao">—</div>Scripts de Negociação</div>
+        <div class="pi off"><div class="pi-ic nao">—</div>Método de Organização</div>
+        <div class="pi off"><div class="pi-ic nao">—</div>Suporte prioritário</div>
       </div>
-      <button class="btn-plano verde" onclick="abrirCheckout('essencial')">Quero este plano →</button>
+      <button class="btn-plano v" onclick="abrirCheckout('essencial')">Quero este plano</button>
     </div>
 
-    <div class="plano-card destaque">
+    <!-- COMPLETO — DESTAQUE -->
+    <div class="plano destaque">
       <div class="plano-pop">⭐ Mais escolhido</div>
-      <div class="plano-nome">Completo</div>
-      <div class="plano-titulo">Dívida Zero Pro</div>
-      <div class="plano-desc">O kit completo: negocie, organize e mude sua relação com o dinheiro de vez.</div>
-      <div class="plano-preco-de">De R$127,00</div>
+      <div class="plano-tag">Completo</div>
+      <div class="plano-nome">Dívida Zero Pro</div>
+      <div class="plano-desc">O pacote completo para negociar, organizar e sair das dívidas de vez.</div>
+      <div class="plano-preco-de">De R$147,00</div>
       <div class="plano-preco"><sup>R$</sup>47,90</div>
       <div class="plano-pag">pagamento único via Pix</div>
       <div class="plano-itens">
-        <div class="pi"><div class="pi-check">✓</div>Guia Dívida Zero — Passo a Passo</div>
-        <div class="pi"><div class="pi-check">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi"><div class="pi-check">✓</div>12 Scripts de Negociação Prontos</div>
-        <div class="pi"><div class="pi-check">✓</div>Método de Organização Financeira</div>
-        <div class="pi off"><div class="pi-check">—</div>Suporte prioritário</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Guia Dívida Zero (PDF)</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Planilha de Controle Financeiro</div>
+        <div class="pi"><div class="pi-ic sim">✓</div><strong>12 Scripts de Negociação</strong></div>
+        <div class="pi"><div class="pi-ic sim">✓</div><strong>Método de Organização Financeira</strong></div>
+        <div class="pi off"><div class="pi-ic nao">—</div>Suporte prioritário</div>
       </div>
-      <button class="btn-plano ouro" onclick="abrirCheckout('completo')">Quero este plano →</button>
+      <button class="btn-plano d" onclick="abrirCheckout('completo')">Quero este plano</button>
     </div>
 
-    <div class="plano-card">
-      <div class="plano-nome">Master</div>
-      <div class="plano-titulo">Dívida Zero Master</div>
-      <div class="plano-desc">Tudo do Completo + suporte direto por WhatsApp por 30 dias para tirar dúvidas.</div>
-      <div class="plano-preco-de">De R$247,00</div>
+    <!-- MASTER -->
+    <div class="plano">
+      <div class="plano-tag">Master</div>
+      <div class="plano-nome">Dívida Zero Master</div>
+      <div class="plano-desc">Tudo do Completo + suporte direto por WhatsApp por 30 dias para tirar dúvidas do seu caso.</div>
+      <div class="plano-preco-de">De R$297,00</div>
       <div class="plano-preco"><sup>R$</sup>89,90</div>
       <div class="plano-pag">pagamento único via Pix</div>
       <div class="plano-itens">
-        <div class="pi"><div class="pi-check">✓</div>Guia Dívida Zero — Passo a Passo</div>
-        <div class="pi"><div class="pi-check">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi"><div class="pi-check">✓</div>12 Scripts de Negociação Prontos</div>
-        <div class="pi"><div class="pi-check">✓</div>Método de Organização Financeira</div>
-        <div class="pi"><div class="pi-check">✓</div><strong>Suporte por WhatsApp — 30 dias</strong></div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Guia Dívida Zero (PDF)</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Planilha de Controle Financeiro</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>12 Scripts de Negociação</div>
+        <div class="pi"><div class="pi-ic sim">✓</div>Método de Organização Financeira</div>
+        <div class="pi"><div class="pi-ic sim">✓</div><strong>Suporte WhatsApp por 30 dias</strong></div>
       </div>
-      <button class="btn-plano verde" onclick="abrirCheckout('master')">Quero este plano →</button>
+      <button class="btn-plano v" onclick="abrirCheckout('master')">Quero este plano</button>
     </div>
 
   </div>
+
   <p style="margin-top:2rem;font-size:.8rem;color:var(--c4)">🔒 Garantia de 7 dias em todos os planos &nbsp;·&nbsp; Acesso imediato após o Pix</p>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="s alt">
-  <div class="ey">Quem já aplicou o método</div>
-  <h2 class="t">O que dizem quem colocou<br>em prática</h2>
-  <p class="sub" style="margin-bottom:2.2rem">Cada situação é diferente. Os resultados variam conforme o perfil da dívida e a disposição do credor.</p>
-  <div class="depo-grid fade-in">
+<!-- ════════════════════
+     PROVA SOCIAL
+════════════════════ -->
+<section class="s">
+  <span class="ey">Quem já usou</span>
+  <h2 class="titulo">Resultados de quem aplicou o método</h2>
+  <p class="subtitulo" style="margin-bottom:1.2rem">Cada caso é diferente. Os resultados dependem da situação de cada um e da disposição dos credores.</p>
+
+  <div class="prova-aviso">
+    💡 Dica: substitua esses depoimentos por prints reais de clientes para aumentar a credibilidade.
+  </div>
+
+  <div class="depo-grid">
     <div class="depo">
-      <div class="dtag">Renegociou 3 dívidas</div>
-      <div class="dstars">★★★★★</div>
-      <div class="dtxt">"Não sabia nem por onde começar. Com o guia, entendi o que priorizar e usei um dos scripts para ligar pro banco. Consegui um parcelamento que cabia no bolso."</div>
-      <div class="dautor"><div class="dav">MA</div><div><div class="davnome">Marcos A.</div><div class="davloc">São Paulo, SP</div></div></div>
+      <div class="depo-resultado">Renegociou 3 dívidas</div>
+      <div class="depo-stars">★★★★★</div>
+      <div class="depo-txt">"Eu não sabia nem como começar a falar com o banco. Com o script na mão, liguei sabendo o que pedir. Consegui um parcelamento que cabia no meu orçamento. Valeu muito mais do que paguei."</div>
+      <div class="depo-autor">
+        <div class="dav">MA</div>
+        <div><div class="dav-nome">Marcos A.</div><div class="dav-local">São Paulo, SP</div></div>
+      </div>
     </div>
     <div class="depo">
-      <div class="dtag">Organizou as finanças pela 1ª vez</div>
-      <div class="dstars">★★★★★</div>
-      <div class="dtxt">"A planilha me ajudou a enxergar quanto eu devia de verdade. Isso sozinho já valeu muito mais do que paguei. Nunca tinha visto tudo junto de forma clara."</div>
-      <div class="dautor"><div class="dav">JF</div><div><div class="davnome">Juliana F.</div><div class="davloc">Campinas, SP</div></div></div>
+      <div class="depo-resultado">Organizou tudo pela 1ª vez</div>
+      <div class="depo-stars">★★★★★</div>
+      <div class="depo-txt">"A planilha foi o que mais me ajudou. Eu nunca tinha colocado as dívidas no papel. Ver o número real assustou, mas também deu clareza. Agora sei exatamente o que devo e quando quito."</div>
+      <div class="depo-autor">
+        <div class="dav">JF</div>
+        <div><div class="dav-nome">Juliana F.</div><div class="dav-local">Campinas, SP</div></div>
+      </div>
     </div>
     <div class="depo">
-      <div class="dtag">Usou os scripts na negociação</div>
-      <div class="dstars">★★★★★</div>
-      <div class="dtxt">"Com o roteiro na mão, foi muito mais fácil ligar pro banco. O atendente aceitou reduzir os juros porque eu sabia exatamente o que pedir."</div>
-      <div class="dautor"><div class="dav">RS</div><div><div class="davnome">Rafael S.</div><div class="davloc">Ribeirão Preto, SP</div></div></div>
+      <div class="depo-resultado">Reduziu os juros na negociação</div>
+      <div class="depo-stars">★★★★★</div>
+      <div class="depo-txt">"Sempre tive medo de ligar pro banco. Com o roteiro pronto, a conversa foi completamente diferente. O atendente aceitou reduzir porque eu sabia argumentar. Sem o script eu teria aceitado qualquer coisa."</div>
+      <div class="depo-autor">
+        <div class="dav">RS</div>
+        <div><div class="dav-nome">Rafael S.</div><div class="dav-local">Ribeirão Preto, SP</div></div>
+      </div>
     </div>
   </div>
-  <p style="margin-top:2rem;font-size:.77rem;color:var(--c4);max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7">Os depoimentos refletem a experiência individual de cada usuário. O resultado varia conforme o perfil da dívida e a disposição do credor em negociar.</p>
+
+  <p class="prova-nota">Os resultados refletem a experiência individual de cada usuário. O resultado varia conforme o perfil da dívida, a disposição do credor e o comprometimento de cada pessoa.</p>
 </section>
 
-<!-- GARANTIA -->
-<section class="s dark">
-  <div class="gar-box">
-    <div class="gar-badge">🛡️ Garantia incondicional</div>
-    <h2 class="t" style="color:#fff;font-size:1.75rem;margin-bottom:.7rem">7 dias para testar.<br>Sem risco nenhum.</h2>
-    <p style="color:#999;font-size:.93rem;max-width:400px;margin:0 auto;line-height:1.8">Se você acessar o material e por qualquer motivo não ficar satisfeito, é só nos enviar uma mensagem em até 7 dias. Devolvemos 100% do valor pago. Sem perguntas, sem burocracia.</p>
+<!-- ════════════════════
+     GARANTIA
+════════════════════ -->
+<section class="s escuro">
+  <div class="garantia-card">
+    <div class="garantia-ico">🛡️</div>
+    <h2 class="titulo" style="color:#fff;font-size:1.7rem;margin-bottom:.6rem">Garantia total de 7 dias</h2>
+    <p style="color:#aaa;font-size:.93rem;max-width:400px;margin:0 auto 1rem;line-height:1.75">Se você acessar o material e sentir que não era o que esperava — por qualquer motivo — é só nos enviar uma mensagem em até 7 dias. Devolvemos 100% do valor pago.</p>
+    <p style="color:#555;font-size:.8rem;max-width:380px;margin:0 auto;line-height:1.65">Sem formulário complicado. Sem precisar explicar nada. Sem burocracia. O risco é inteiramente nosso.</p>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ════════════════════
+     FAQ
+════════════════════ -->
 <section class="s alt">
-  <div class="ey">Dúvidas frequentes</div>
-  <h2 class="t">Perguntas que aparecem bastante</h2>
-  <p class="sub">Respondidas de forma direta e honesta.</p>
-  <div class="faq-lista fade-in">
+  <span class="ey">Dúvidas</span>
+  <h2 class="titulo">Perguntas que aparecem bastante</h2>
+  <p class="subtitulo">Respondidas sem enrolação.</p>
+
+  <div class="faq-wrap">
     <div class="faq-item">
       <div class="faq-q">Qual a diferença entre os planos? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>O Essencial inclui o Guia passo a passo e a Planilha financeira — ideal para quem quer começar a se organizar. O Completo adiciona os 12 Scripts de Negociação e o Método de Organização Financeira. O Master inclui tudo isso mais suporte prioritário por WhatsApp por 30 dias.</p></div>
+      <div class="faq-r"><p>O <strong>Essencial</strong> inclui o Guia e a Planilha — bom para começar a se organizar. O <strong>Completo</strong> adiciona os 12 Scripts de Negociação e o Método de Organização — recomendado para quem quer negociar de verdade. O <strong>Master</strong> inclui tudo mais suporte direto por WhatsApp por 30 dias para tirar dúvidas do seu caso específico.</p></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Como recebo o material após pagar? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Logo após a confirmação do Pix, você recebe um e-mail com o link de acesso ao material completo. Se não encontrar na caixa de entrada, verifique a pasta de spam. O acesso é imediato — geralmente em menos de 5 minutos.</p></div>
+      <div class="faq-q">Como recebo o material depois de pagar? <div class="faq-ico">+</div></div>
+      <div class="faq-r"><p>Após a confirmação do Pix (geralmente em minutos), você recebe um e-mail com o link de acesso. Verifique também a caixa de spam. Se tiver qualquer problema, é só nos contatar pelo e-mail de suporte e resolvemos rapidamente.</p></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Funciona para qualquer tipo de dívida? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Sim, para os tipos mais comuns no Brasil: cartão de crédito, cheque especial, empréstimo pessoal, carnês e contas atrasadas. Para situações que já estão em processo judicial, recomendamos buscar orientação jurídica especializada.</p></div>
+      <div class="faq-r"><p>Sim, para os casos mais comuns no Brasil: cartão de crédito, cheque especial, empréstimos pessoais, carnês, contas em atraso e financiamentos simples. Para dívidas com processos judiciais em andamento, recomendamos complementar com orientação de um profissional.</p></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Preciso ter conhecimento financeiro? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Não. O material foi criado pensando em quem nunca organizou as finanças antes. Linguagem simples, sem jargão técnico, com exemplos práticos do dia a dia brasileiro.</p></div>
+      <div class="faq-q">Precisa entender de finanças para usar? <div class="faq-ico">+</div></div>
+      <div class="faq-r"><p>Não. O material foi criado pensando em quem nunca organizou as finanças na vida. Linguagem simples, exemplos práticos, sem jargão de economista.</p></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">O banco é obrigado a aceitar a negociação? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Não. O material te prepara para conduzir a negociação da melhor forma possível, sabendo o que pedir e como argumentar. A decisão final é sempre do credor — mas chegar preparado faz diferença real na maioria dos casos.</p></div>
+      <div class="faq-q">Isso garante que o banco vai aceitar negociar? <div class="faq-ico">+</div></div>
+      <div class="faq-r"><p>Não existe garantia de que qualquer credor vai aceitar — e desconfie de quem promete isso. O que o Dívida Zero garante é que você entra na negociação preparado: sabendo o que pedir, como argumentar e o que aceitar ou recusar. Isso muda muito o resultado na prática.</p></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">O material funciona no celular? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Sim. Os PDFs podem ser abertos em qualquer celular Android ou iPhone. A planilha funciona no Google Sheets (gratuito, direto no celular) e também no Excel.</p></div>
+      <div class="faq-q">Isso substitui advogado ou assessor financeiro? <div class="faq-ico">+</div></div>
+      <div class="faq-r"><p>Não, e deixamos isso claro. O Dívida Zero é um material educativo. Para casos complexos, processos judiciais ou situações que exigem representação, a orientação de um profissional qualificado é indispensável.</p></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Como funciona a garantia de 7 dias? <div class="faq-ico">+</div></div>
-      <div class="faq-r"><p>Se em até 7 dias após a compra você não estiver satisfeito por qualquer motivo, é só nos enviar uma mensagem em contato@dividazero.com.br. Devolvemos 100% do valor pago sem questionamentos.</p></div>
+      <div class="faq-r"><p>Em até 7 dias após a compra, se você não estiver satisfeito por qualquer motivo, é só nos mandar uma mensagem. Devolvemos 100% do valor. Sem perguntas, sem formulário, sem burocracia.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">O pagamento é seguro? Meus dados ficam protegidos? <div class="faq-ico">+</div></div>
+      <div class="faq-r"><p>Sim. O pagamento é processado via Pix com segurança. Não armazenamos dados do seu cartão e as suas informações não são compartilhadas com terceiros.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- ════════════════════
+     CTA FINAL
+════════════════════ -->
 <section class="cta-final">
-  <h2>Você merece <em>dormir tranquilo</em> de novo.</h2>
-  <p>Ter dívidas não é falta de caráter — é falta da informação certa. O material certo pode mudar como você lida com isso a partir de hoje.</p>
-  <button class="btn-hero" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">Ver os planos e começar →</button>
-  <div style="margin-top:1.2rem;font-size:.76rem;color:rgba(255,255,255,.3)">🔒 Garantia de 7 dias &nbsp;·&nbsp; Acesso imediato &nbsp;·&nbsp; Produto 100% digital</div>
+  <h2>Você não precisa continuar<br>sendo <em>refém das dívidas.</em></h2>
+  <p>A dívida não vai embora sozinha. Mas com as ferramentas certas, resolver fica muito mais fácil do que parece. Dá pra começar agora.</p>
+  <button class="btn-principal" onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">
+    Escolher meu plano e começar
+    <small>🔒 Garantia de 7 dias · Acesso imediato via Pix</small>
+  </button>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="fl">
+  <div class="footer-links">
     <a href="#">Política de Privacidade</a>
     <a href="#">Termos de Uso</a>
     <a href="mailto:contato@dividazero.com.br">contato@dividazero.com.br</a>
   </div>
   © 2025 Dívida Zero · Todos os direitos reservados<br>
-  <span style="color:#333">CNPJ/CPF do responsável: XX.XXX.XXX/0001-XX</span>
-  <div class="fd">Este é um produto educacional digital. O conteúdo tem caráter informativo e orientativo — não constitui assessoria jurídica, financeira ou contábil. Os resultados variam conforme o perfil de cada usuário e as condições dos credores. A Dívida Zero não garante aprovação de negociações com credores.</div>
+  <span style="color:#2a2a2a">CNPJ/CPF do responsável: XX.XXX.XXX/0001-XX</span>
+  <div class="footer-disc">
+    Produto educacional digital. O conteúdo tem caráter informativo e orientativo — não constitui assessoria jurídica, financeira ou contábil profissional. Os resultados variam conforme o perfil de cada usuário e as condições oferecidas pelos credores. Ao adquirir este produto, o comprador declara estar ciente dessas condições.
+  </div>
 </footer>
 
-<!-- STICKY MOBILE CTA -->
-<div class="sticky-cta" id="stickyCta">
-  <button onclick="document.querySelector('#planos').scrollIntoView({behavior:'smooth'})">Começar por R$25,90 →</button>
-</div>
-
-<!-- MODAL CHECKOUT -->
-<div class="modal-overlay" id="modal">
+<!-- ════════════════════
+     MODAL CHECKOUT PIX
+════════════════════ -->
+<div class="modal-ov" id="modal">
   <div class="modal">
+    <span class="modal-handle"></span>
     <button class="modal-close" onclick="fecharModal()">✕</button>
     <h3>Finalizar compra</h3>
-    <div class="modal-plano-info">Plano: <strong id="modal-plano-nome">—</strong> · Valor: <strong id="modal-plano-valor">—</strong></div>
-
-    <div class="step ativo" id="step1">
-      <label for="input-nome">Seu nome completo</label>
-      <input type="text" id="input-nome" placeholder="Ex: Maria Silva" autocomplete="name">
-
-      <label for="input-cpf">Seu CPF (apenas números)</label>
-      <input type="text" id="input-cpf" placeholder="Ex: 123.456.789-00" maxlength="14" autocomplete="off">
-
-      <div id="form-erro" class="erro-msg" style="display:none"></div>
-      <button class="btn-modal" id="btn-gerar" onclick="gerarPix()">Gerar Pix →</button>
+    <div class="modal-info">
+      Plano: <strong id="modal-nome">—</strong><br>
+      Valor: <strong id="modal-valor">—</strong> · pagamento único via Pix
     </div>
 
+    <!-- STEP 1: DADOS -->
+    <div class="step ativo" id="step1">
+      <label for="inp-nome">Seu nome completo</label>
+      <input type="text" id="inp-nome" placeholder="Ex: Maria da Silva" autocomplete="name">
+
+      <label for="inp-cpf">CPF (só números)</label>
+      <input type="text" id="inp-cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off" inputmode="numeric">
+
+      <div id="form-erro" class="erro-msg" style="display:none"></div>
+      <button class="btn-modal" id="btn-gerar" onclick="gerarPix()">Gerar QR Code Pix →</button>
+    </div>
+
+    <!-- STEP 2: PIX -->
     <div class="step" id="step2">
       <div class="qr-wrap">
-        <p style="font-size:.82rem;color:var(--c3);margin-bottom:.8rem">Escaneie o QR Code ou copie o código Pix abaixo:</p>
+        <p class="qr-instr">Abra o app do seu banco, vá em <strong>Pix</strong> e escaneie o QR Code ou copie o código abaixo:</p>
         <img id="qr-img" src="" alt="QR Code Pix">
       </div>
-      <div class="copypaste-box" id="copypaste-box" onclick="copiarPix()" title="Clique para copiar">
-        Carregando código Pix…
+      <div class="copypaste-box" id="copypaste-box" onclick="copiarPix()" title="Toque para copiar">
+        Aguardando código…
       </div>
       <button class="btn-copiar" onclick="copiarPix()">📋 Copiar código Pix</button>
       <div class="status-box pendente" id="status-box">
-        <span class="loader"></span> Aguardando pagamento…
+        <span class="loader"></span> Aguardando confirmação do pagamento…
       </div>
-      <p style="font-size:.75rem;color:var(--c4);text-align:center;margin-top:.8rem">O acesso é liberado automaticamente após a confirmação.</p>
+      <p style="font-size:.74rem;color:var(--c4);text-align:center;margin-top:.8rem;line-height:1.6">O acesso é liberado automaticamente assim que o Pix for confirmado.</p>
     </div>
 
-    <div class="step" id="step3" style="text-align:center;padding:1rem 0">
-      <div style="font-size:3.2rem;margin-bottom:.8rem">✅</div>
-      <h3 style="margin-bottom:.5rem">Pagamento confirmado!</h3>
-      <p style="font-size:.9rem;color:var(--c3);line-height:1.75">Você receberá o link de acesso ao material no e-mail em instantes. Se não chegar na caixa de entrada, verifique o spam.</p>
-      <p style="margin-top:1rem;font-size:.88rem;color:var(--v2);font-weight:700">Obrigado por confiar no Dívida Zero 💚</p>
+    <!-- STEP 3: PAGO -->
+    <div class="step" id="step3" style="text-align:center;padding:1.5rem 0">
+      <div style="font-size:3.5rem;margin-bottom:1rem">✅</div>
+      <h3 style="margin-bottom:.6rem;font-family:'Fraunces',serif">Pagamento confirmado!</h3>
+      <p style="font-size:.9rem;color:var(--c3);line-height:1.7;max-width:320px;margin:0 auto">Você receberá o link de acesso ao material no e-mail cadastrado em instantes. Verifique também a caixa de spam.</p>
+      <p style="margin-top:1.2rem;font-size:.88rem;color:var(--v2);font-weight:700">Bem-vindo ao Dívida Zero! 💚</p>
     </div>
   </div>
 </div>
 
 <script>
-const PLANOS_INFO = {
-  essencial: { nome: "Essencial — Dívida Zero Start", valor: "R$25,90" },
-  completo:  { nome: "Completo — Dívida Zero Pro",   valor: "R$47,90" },
-  master:    { nome: "Master — Dívida Zero Master",  valor: "R$89,90" }
+const PLANOS = {
+  essencial: { nome: "Essencial — Dívida Zero Start", valor: "R$25,90", num: 25.90 },
+  completo:  { nome: "Completo — Dívida Zero Pro",   valor: "R$47,90", num: 47.90 },
+  master:    { nome: "Master — Dívida Zero Master",  valor: "R$89,90", num: 89.90 }
 };
 
-let planoAtual = null;
-let transactionIdAtual = null;
-let verificadorInterval = null;
+let planoAtual = null, txId = null, verificador = null;
 
 function abrirCheckout(plano) {
   planoAtual = plano;
-  document.getElementById("modal-plano-nome").textContent = PLANOS_INFO[plano].nome;
-  document.getElementById("modal-plano-valor").textContent = PLANOS_INFO[plano].valor;
+  document.getElementById("modal-nome").textContent = PLANOS[plano].nome;
+  document.getElementById("modal-valor").textContent = PLANOS[plano].valor;
   mostrarStep("step1");
   document.getElementById("form-erro").style.display = "none";
-  document.getElementById("input-nome").value = "";
-  document.getElementById("input-cpf").value = "";
+  document.getElementById("inp-nome").value = "";
+  document.getElementById("inp-cpf").value = "";
   const btn = document.getElementById("btn-gerar");
-  btn.disabled = false;
-  btn.textContent = "Gerar Pix →";
+  btn.disabled = false; btn.textContent = "Gerar QR Code Pix →";
   document.getElementById("modal").classList.add("ativo");
   document.body.style.overflow = "hidden";
 
   if (typeof fbq !== "undefined") {
-    const valores = { essencial: 25.90, completo: 47.90, master: 89.90 };
     fbq('track', 'InitiateCheckout', {
-      content_name: PLANOS_INFO[plano].nome,
-      content_category: 'Produto Digital',
-      value: valores[plano],
+      content_name: PLANOS[plano].nome,
+      value: PLANOS[plano].num,
       currency: 'BRL'
     });
   }
@@ -636,7 +820,7 @@ function abrirCheckout(plano) {
 function fecharModal() {
   document.getElementById("modal").classList.remove("ativo");
   document.body.style.overflow = "";
-  if (verificadorInterval) clearInterval(verificadorInterval);
+  if (verificador) clearInterval(verificador);
 }
 
 function mostrarStep(id) {
@@ -644,7 +828,8 @@ function mostrarStep(id) {
   document.getElementById(id).classList.add("ativo");
 }
 
-document.getElementById("input-cpf").addEventListener("input", function() {
+// Formatar CPF
+document.getElementById("inp-cpf").addEventListener("input", function() {
   let v = this.value.replace(/\D/g, "").slice(0, 11);
   if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
   else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{3})/, "$1.$2.$3");
@@ -653,90 +838,86 @@ document.getElementById("input-cpf").addEventListener("input", function() {
 });
 
 async function gerarPix() {
-  const nome = document.getElementById("input-nome").value.trim();
-  const cpf  = document.getElementById("input-cpf").value.trim();
+  const nome = document.getElementById("inp-nome").value.trim();
+  const cpf  = document.getElementById("inp-cpf").value.trim();
   const erroEl = document.getElementById("form-erro");
   const btn = document.getElementById("btn-gerar");
   erroEl.style.display = "none";
+
   if (nome.length < 3) { erroEl.textContent = "Digite seu nome completo."; erroEl.style.display = "block"; return; }
-  if (cpf.replace(/\D/g,"").length !== 11) { erroEl.textContent = "Digite um CPF válido com 11 dígitos."; erroEl.style.display = "block"; return; }
-  btn.disabled = true;
-  btn.textContent = "Gerando Pix…";
+  if (cpf.replace(/\D/g, "").length !== 11) { erroEl.textContent = "Digite um CPF válido com 11 dígitos."; erroEl.style.display = "block"; return; }
+
+  btn.disabled = true; btn.textContent = "Gerando Pix…";
+
   try {
     const res = await fetch("/api/criar-pix", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ plano: planoAtual, nome, cpf })
     });
-    const contentType = res.headers.get("content-type") || "";
-    if (!contentType.includes("application/json")) {
-      throw new Error("A API não respondeu corretamente. Verifique o deploy.");
+
+    const ct = res.headers.get("content-type") || "";
+    if (!ct.includes("application/json")) {
+      throw new Error("Rota /api/criar-pix não encontrada. Verifique o deploy no Vercel.");
     }
+
     const data = await res.json();
     if (!data.ok) throw new Error(data.erro || "Erro ao gerar Pix");
-    transactionIdAtual = data.transactionId;
+
+    txId = data.transactionId;
     document.getElementById("qr-img").src = data.qrCodeBase64;
     document.getElementById("copypaste-box").textContent = data.copyPaste;
     document.getElementById("status-box").className = "status-box pendente";
-    document.getElementById("status-box").innerHTML = '<span class="loader"></span> Aguardando pagamento…';
+    document.getElementById("status-box").innerHTML = '<span class="loader"></span> Aguardando confirmação do pagamento…';
+
     mostrarStep("step2");
-    iniciarVerificacao();
+
     if (typeof fbq !== "undefined") {
-      const valores = { essencial: 25.90, completo: 47.90, master: 89.90 };
-      fbq('track', 'AddPaymentInfo', {
-        content_name: PLANOS_INFO[planoAtual].nome,
-        value: valores[planoAtual],
-        currency: 'BRL'
-      });
+      fbq('track', 'AddPaymentInfo', { content_name: PLANOS[planoAtual].nome, value: PLANOS[planoAtual].num, currency: 'BRL' });
     }
+
+    if (verificador) clearInterval(verificador);
+    verificador = setInterval(checarPagamento, 5000);
+
   } catch (e) {
     erroEl.textContent = e.message || "Erro ao gerar Pix. Tente novamente.";
     erroEl.style.display = "block";
-    btn.disabled = false;
-    btn.textContent = "Gerar Pix →";
+    btn.disabled = false; btn.textContent = "Gerar QR Code Pix →";
   }
 }
 
-function iniciarVerificacao() {
-  if (verificadorInterval) clearInterval(verificadorInterval);
-  verificadorInterval = setInterval(verificarPagamento, 5000);
-}
-
-async function verificarPagamento() {
-  if (!transactionIdAtual) return;
+async function checarPagamento() {
+  if (!txId) return;
   try {
     const res = await fetch("/api/verificar-pix", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ transactionId: transactionIdAtual })
+      body: JSON.stringify({ transactionId: txId })
     });
     const data = await res.json();
     if (data.pago) {
-      clearInterval(verificadorInterval);
+      clearInterval(verificador);
       mostrarStep("step3");
-      if (typeof fbq !== "undefined" && !window.__purchaseTracked) {
-        window.__purchaseTracked = true;
-        const valores = { essencial: 25.90, completo: 47.90, master: 89.90 };
-        fbq('track', 'Purchase', {
-          content_name: PLANOS_INFO[planoAtual].nome,
-          value: valores[planoAtual],
-          currency: 'BRL'
-        });
+      if (typeof fbq !== "undefined" && !window.__purchaseDone) {
+        window.__purchaseDone = true;
+        fbq('track', 'Purchase', { content_name: PLANOS[planoAtual].nome, value: PLANOS[planoAtual].num, currency: 'BRL' });
       }
     } else if (data.status === "FALHA") {
-      clearInterval(verificadorInterval);
-      document.getElementById("status-box").className = "status-box erro";
-      document.getElementById("status-box").textContent = "⚠️ Pagamento não confirmado. Tente gerar um novo Pix.";
+      clearInterval(verificador);
+      const sb = document.getElementById("status-box");
+      sb.className = "status-box erro";
+      sb.textContent = "⚠️ Pagamento não confirmado. Tente gerar um novo Pix.";
     }
   } catch (_) {}
 }
 
 function copiarPix() {
   const txt = document.getElementById("copypaste-box").textContent;
+  if (!txt || txt === "Aguardando código…") return;
   navigator.clipboard.writeText(txt).then(() => {
     const btn = document.querySelector(".btn-copiar");
     btn.textContent = "✅ Copiado!";
-    setTimeout(() => btn.textContent = "📋 Copiar código Pix", 2000);
+    setTimeout(() => btn.textContent = "📋 Copiar código Pix", 2500);
   });
 }
 
@@ -752,20 +933,6 @@ document.querySelectorAll(".faq-q").forEach(q => {
 document.getElementById("modal").addEventListener("click", function(e) {
   if (e.target === this) fecharModal();
 });
-
-// Fade-in on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); observer.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-
-// Sticky mobile CTA: hide when pricing is visible
-const planosSection = document.getElementById("planos");
-const stickyCtaEl = document.getElementById("stickyCta");
-const ctaObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => { stickyCtaEl.style.display = e.isIntersecting ? "none" : "block"; });
-}, { threshold: 0.1 });
-ctaObserver.observe(planosSection);
 </script>
 </body>
 </html>
