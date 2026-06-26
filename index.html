@@ -234,39 +234,83 @@ footer{background:#050505;color:#3a3a3a;text-align:center;padding:2.2rem 1.5rem;
 .ft-disc{font-size:.69rem;color:#222;max-width:600px;margin:.9rem auto 0;line-height:1.72}
 
 /* ─── MODAL ─── */
-.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:1000;align-items:flex-end;justify-content:center;padding:0}
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:1000;align-items:flex-end;justify-content:center;padding:0;backdrop-filter:blur(4px)}
 .modal-ov.ativo{display:flex}
 @media(min-width:600px){.modal-ov{align-items:center;padding:1rem}}
-.modal{background:var(--w);border-radius:20px 20px 0 0;padding:2rem 1.6rem 2.6rem;width:100%;max-width:440px;position:relative;max-height:92vh;overflow-y:auto}
-@media(min-width:600px){.modal{border-radius:18px}}
-.modal-drag{width:40px;height:4px;background:var(--n7);border-radius:4px;margin:0 auto 1.6rem}
+.modal{background:var(--w);border-radius:24px 24px 0 0;width:100%;max-width:460px;position:relative;max-height:94vh;overflow-y:auto;box-shadow:0 -8px 40px rgba(0,0,0,.2)}
+@media(min-width:600px){.modal{border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.3)}}
+.modal-header{background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:24px 24px 0 0;padding:1.4rem 1.6rem 1.2rem;position:relative}
+@media(min-width:600px){.modal-header{border-radius:20px 20px 0 0}}
+.modal-drag{width:36px;height:4px;background:rgba(255,255,255,.3);border-radius:4px;margin:0 auto .9rem}
 @media(min-width:600px){.modal-drag{display:none}}
-.modal-x{position:absolute;top:1.1rem;right:1.1rem;background:var(--n8);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--n4)}
-.modal-x:hover{background:var(--n7)}
-.modal h3{font-family:'Lora',serif;font-size:1.45rem;font-weight:700;margin-bottom:.3rem;color:var(--n1)}
-.modal-meta{font-size:.82rem;color:var(--n4);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--n7);line-height:1.55}
-.modal-meta strong{color:var(--g2)}
+.modal-x{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.15);border:none;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);transition:background .2s}
+.modal-x:hover{background:rgba(255,255,255,.25)}
+.modal-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9);font-size:.67rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:.28rem .7rem;border-radius:4px;margin-bottom:.5rem}
+.modal h3{font-family:'Lora',serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:.2rem;line-height:1.2}
+.modal-sub{font-size:.79rem;color:rgba(255,255,255,.7);line-height:1.5}
+.modal-sub strong{color:#fff}
+.modal-plano-resumo{display:flex;align-items:center;justify-content:space-between;background:#F0FDF4;border:1.5px solid #A7F3D0;border-radius:10px;padding:.8rem 1rem;margin:1.2rem 1.4rem .5rem}
+.mpr-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--g3);margin-bottom:.1rem}
+.mpr-nome{font-size:.88rem;font-weight:700;color:var(--g1)}
+.mpr-valor{font-family:'Lora',serif;font-size:1.5rem;font-weight:700;color:var(--g1);text-align:right;line-height:1}
+.mpr-pag{font-size:.67rem;color:var(--g3);text-align:right}
+.modal-body{padding:1rem 1.4rem 1.6rem}
 .step{display:none}
 .step.ativo{display:block}
-label{display:block;font-size:.82rem;font-weight:700;color:var(--n2);margin-bottom:.38rem}
-input[type=text]{width:100%;border:1.5px solid var(--n7);border-radius:9px;padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.93rem;color:var(--n1);outline:none;transition:border-color .2s,box-shadow .2s;margin-bottom:1.1rem;background:var(--w)}
-input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,105,.1)}
-.err{font-size:.78rem;color:var(--danger);margin-top:-.8rem;margin-bottom:.9rem;font-weight:500}
-.btn-md{width:100%;background:linear-gradient(135deg,var(--a5),var(--a3));color:var(--w);padding:1.05rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:800;font-size:.97rem;border:none;cursor:pointer;transition:opacity .2s,transform .15s;box-shadow:0 4px 20px rgba(180,83,9,.3)}
-.btn-md:hover:not(:disabled){transform:translateY(-1px)}
-.btn-md:disabled{opacity:.5;cursor:not-allowed}
-.qr-wrap{text-align:center;margin-bottom:1.2rem}
-.qr-wrap img{width:180px;height:180px;border-radius:12px;border:1px solid var(--n7)}
-.qr-txt{font-size:.82rem;color:var(--n4);margin-bottom:.8rem;line-height:1.6}
-.copy-box{background:var(--n8);border:1.5px solid var(--n7);border-radius:9px;padding:.85rem 1rem;font-size:.72rem;color:var(--n4);word-break:break-all;margin-bottom:.8rem;line-height:1.5;cursor:pointer;transition:background .2s}
-.copy-box:hover{background:var(--g7)}
-.btn-copy{width:100%;background:var(--g3);color:var(--w);border:none;padding:.88rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.92rem;cursor:pointer;margin-bottom:.8rem;transition:background .2s}
-.btn-copy:hover{background:var(--g2)}
-.status{text-align:center;padding:1rem;border-radius:10px;font-size:.88rem;font-weight:600}
-.status.pend{background:#FFF8EC;color:var(--a2)}
-.status.err{background:#FEF2F2;color:var(--danger)}
-.loader{display:inline-block;width:16px;height:16px;border:2.5px solid rgba(0,0,0,.1);border-top-color:var(--g4);border-radius:50%;animation:spin .75s linear infinite;vertical-align:middle;margin-right:.4rem}
+.selos-form{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.1rem}
+.selo-f{display:flex;align-items:center;gap:.3rem;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:6px;padding:.28rem .55rem;font-size:.68rem;font-weight:600;color:#374151}
+.selo-f.verde{background:#F0FDF4;border-color:#A7F3D0;color:#065F46}
+.form-grupo{margin-bottom:1rem}
+.form-grupo label{display:block;font-size:.8rem;font-weight:700;color:#111;margin-bottom:.35rem}
+.form-grupo .label-hint{font-size:.71rem;color:var(--g3);font-weight:500;margin-left:.3rem}
+.form-grupo input{width:100%;border:1.5px solid #E5E7EB;border-radius:9px;padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.93rem;color:#111;outline:none;transition:border-color .2s,box-shadow .2s;background:#fff}
+.form-grupo input:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,105,.1)}
+.form-grupo input.erro-input{border-color:#EF4444;box-shadow:0 0 0 3px rgba(239,68,68,.08)}
+.err{font-size:.76rem;color:#DC2626;margin-top:.3rem;font-weight:500;display:flex;align-items:center;gap:.3rem}
+.lgpd-aviso{display:flex;align-items:flex-start;gap:.5rem;background:#F9FAFB;border-radius:8px;padding:.65rem .85rem;margin-bottom:1rem;font-size:.71rem;color:#6B7280;line-height:1.55}
+.lgpd-ico{font-size:.9rem;flex-shrink:0;margin-top:.05rem}
+.btn-md{width:100%;background:linear-gradient(135deg,#16A34A,#065F46);color:#fff;padding:1.1rem;border-radius:10px;font-family:'DM Sans',sans-serif;font-weight:800;font-size:1rem;border:none;cursor:pointer;transition:opacity .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 22px rgba(5,150,105,.35);letter-spacing:.1px}
+.btn-md:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 8px 30px rgba(5,150,105,.45)}
+.btn-md:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn-md-sub{font-size:.71rem;opacity:.75;display:block;margin-top:.2rem;font-weight:500}
+.garantia-form{display:flex;align-items:center;gap:.55rem;background:#FFF7ED;border:1px solid #FED7AA;border-radius:8px;padding:.65rem .85rem;margin-top:.85rem;font-size:.75rem;color:#92400E;line-height:1.5}
+.garantia-form strong{color:#78350F}
+.pix-header{text-align:center;margin-bottom:1rem}
+.pix-titulo{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:#111;margin-bottom:.2rem}
+.pix-sub{font-size:.81rem;color:#6B7280;line-height:1.55}
+.pix-tabs{display:flex;gap:.5rem;margin-bottom:1rem}
+.pix-tab{flex:1;padding:.55rem;border:1.5px solid #E5E7EB;border-radius:8px;background:#fff;font-family:'DM Sans',sans-serif;font-size:.81rem;font-weight:600;color:#6B7280;cursor:pointer;transition:all .2s;text-align:center}
+.pix-tab.ativo{border-color:var(--g4);background:#F0FDF4;color:var(--g1)}
+.pix-qr-panel,.pix-copy-panel{display:none}
+.pix-qr-panel.show,.pix-copy-panel.show{display:block}
+.qr-wrap{text-align:center;padding:.8rem 0}
+.qr-border{display:inline-block;background:#fff;border:2px solid #E5E7EB;border-radius:16px;padding:.9rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.qr-wrap img{width:165px;height:165px;display:block}
+.qr-instrucao{margin-top:.7rem;font-size:.77rem;color:#6B7280;line-height:1.6}
+.copy-instrucao{font-size:.81rem;color:#374151;margin-bottom:.6rem;line-height:1.6}
+.copy-box{background:#F9FAFB;border:1.5px solid #E5E7EB;border-radius:9px;padding:.85rem 1rem;font-size:.67rem;color:#6B7280;word-break:break-all;margin-bottom:.8rem;line-height:1.6;cursor:pointer;transition:background .2s,border-color .2s;font-family:monospace}
+.copy-box:hover{background:#F0FDF4;border-color:#A7F3D0}
+.btn-copy{width:100%;background:var(--g3);color:#fff;border:none;padding:.9rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.91rem;cursor:pointer;margin-bottom:.8rem;transition:background .2s,transform .15s}
+.btn-copy:hover{background:var(--g2);transform:translateY(-1px)}
+.pix-timer-wrap{display:flex;align-items:center;justify-content:center;gap:.5rem;background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;padding:.5rem 1rem;margin-bottom:.9rem;font-size:.77rem;color:#92400E;font-weight:600}
+.pix-timer{font-family:monospace;font-weight:700;color:#B45309}
+.status{text-align:center;padding:.9rem 1rem;border-radius:10px;font-size:.86rem;font-weight:600}
+.status.pend{background:#FFF8EC;color:#B45309;border:1px solid #FDE68A}
+.status.err{background:#FEF2F2;color:#DC2626;border:1px solid #FECACA}
+.pix-selos{display:flex;justify-content:center;gap:1rem;margin-top:.9rem;flex-wrap:wrap}
+.pix-selo{font-size:.71rem;color:#9CA3AF;display:flex;align-items:center;gap:.25rem}
+.loader{display:inline-block;width:14px;height:14px;border:2px solid rgba(0,0,0,.1);border-top-color:var(--g4);border-radius:50%;animation:spin .75s linear infinite;vertical-align:middle;margin-right:.35rem}
 @keyframes spin{to{transform:rotate(360deg)}}
+.confirm-wrap{text-align:center;padding:1.5rem 0}
+.confirm-ico{width:68px;height:68px;background:#ECFDF5;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.9rem;border:3px solid #A7F3D0}
+.confirm-titulo{font-family:'Lora',serif;font-size:1.3rem;font-weight:700;color:#065F46;margin-bottom:.5rem}
+.confirm-card{background:#F0FDF4;border:1.5px solid #A7F3D0;border-radius:12px;padding:1rem 1.2rem;margin:1rem auto;max-width:340px;text-align:left}
+.confirm-card-titulo{font-size:.76rem;font-weight:700;color:#065F46;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.5px}
+.confirm-steps{display:flex;flex-direction:column;gap:.5rem}
+.confirm-step{display:flex;align-items:flex-start;gap:.6rem;font-size:.83rem;color:#047857;line-height:1.5}
+.confirm-step-num{width:20px;height:20px;background:#065F46;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.63rem;font-weight:700;flex-shrink:0;margin-top:.05rem}
+.confirm-email{font-size:.81rem;color:#6B7280;margin-top:.8rem;line-height:1.65}
+.confirm-email a{color:var(--g3);font-weight:600}
 
 /* ─── HERO MOCKUP CELULAR ─── */
 .hero-mockup{position:relative;margin-top:3rem;width:100%;max-width:340px;margin-left:auto;margin-right:auto;padding-bottom:40px;padding-right:24px}
@@ -1010,45 +1054,157 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 <!-- MODAL CHECKOUT -->
 <div class="modal-ov" id="modal">
   <div class="modal">
-    <div class="modal-drag"></div>
-    <button class="modal-x" onclick="closeModal()">✕</button>
-    <h3>Finalizar compra</h3>
-    <div class="modal-meta">Plano: <strong id="md-nome">—</strong> · Valor: <strong id="md-val">—</strong></div>
 
-    <div class="step ativo" id="step1">
-      <label for="inp-nome">Seu nome completo</label>
-      <input type="text" id="inp-nome" placeholder="Ex: Maria da Silva" autocomplete="name">
-      <label for="inp-email">Seu e-mail <span style="font-size:.75rem;color:var(--g3);font-weight:500">(acesso enviado aqui)</span></label>
-      <input type="text" id="inp-email" placeholder="Ex: maria@gmail.com" autocomplete="email" inputmode="email">
-      <label for="inp-cpf">Seu CPF</label>
-      <input type="text" id="inp-cpf" placeholder="Ex: 123.456.789-00" maxlength="14" autocomplete="off">
-      <div id="form-err" class="err" style="display:none"></div>
-      <button class="btn-md" id="btn-gerar" onclick="gerarPix()">Gerar QR Code Pix →</button>
+    <!-- HEADER VERDE -->
+    <div class="modal-header">
+      <div class="modal-drag"></div>
+      <button class="modal-x" onclick="closeModal()" aria-label="Fechar">✕</button>
+      <div class="modal-badge">🔒 Ambiente seguro</div>
+      <h3>Finalizar compra</h3>
+      <p class="modal-sub">Pix gerado na hora · <strong>Acesso imediato</strong> após confirmação</p>
     </div>
 
-    <div class="step" id="step2">
-      <div class="qr-wrap">
-        <p class="qr-txt">Abra o app do seu banco, vá em <strong>Pix</strong> e escaneie o QR Code ou copie o código:</p>
-        <img id="qr-img" src="" alt="QR Code Pix">
+    <!-- RESUMO DO PLANO -->
+    <div class="modal-plano-resumo">
+      <div>
+        <div class="mpr-label">Você está comprando</div>
+        <div class="mpr-nome" id="md-nome">—</div>
       </div>
-      <div class="copy-box" id="copy-box" onclick="copiarPix()" title="Toque para copiar">Aguardando código…</div>
-      <button class="btn-copy" onclick="copiarPix()">📋 Copiar código Pix</button>
-      <div class="status pend" id="status-box">
-        <span class="loader"></span> Aguardando confirmação…
+      <div>
+        <div class="mpr-valor" id="md-val">—</div>
+        <div class="mpr-pag">pag. único · Pix</div>
       </div>
-      <p style="font-size:.74rem;color:var(--n5);text-align:center;margin-top:.8rem;line-height:1.6">O acesso é liberado automaticamente assim que o Pix for confirmado.</p>
     </div>
 
-    <div class="step" id="step3" style="text-align:center;padding:1.5rem 0">
-      <div style="font-size:3.5rem;margin-bottom:1rem">✅</div>
-      <h3 style="margin-bottom:.6rem">Pagamento confirmado!</h3>
-      <div style="background:#ECFDF5;border:1.5px solid #A7F3D0;border-radius:12px;padding:1rem 1.2rem;margin:1rem auto;max-width:340px;text-align:left">
-        <p style="font-size:.82rem;font-weight:700;color:#065F46;margin-bottom:.4rem">📦 Entrega do material</p>
-        <p style="font-size:.85rem;color:#047857;line-height:1.7">Você receberá o link de acesso no e-mail cadastrado em <strong>até 24–48 horas úteis.</strong></p>
+    <div class="modal-body">
+
+      <!-- STEP 1: DADOS -->
+      <div class="step ativo" id="step1">
+
+        <!-- Selos de segurança -->
+        <div class="selos-form">
+          <div class="selo-f verde">🔒 SSL seguro</div>
+          <div class="selo-f verde">🛡️ 7 dias garantia</div>
+          <div class="selo-f">📦 Acesso imediato</div>
+          <div class="selo-f">✅ Pix oficial</div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="inp-nome">Seu nome completo</label>
+          <input type="text" id="inp-nome" placeholder="Ex: Maria da Silva" autocomplete="name">
+        </div>
+
+        <div class="form-grupo">
+          <label for="inp-email">E-mail <span class="label-hint">— o acesso será enviado aqui</span></label>
+          <input type="text" id="inp-email" placeholder="Ex: maria@gmail.com" autocomplete="email" inputmode="email">
+        </div>
+
+        <div class="form-grupo">
+          <label for="inp-cpf">CPF <span class="label-hint">— exigido pelo Banco Central para Pix</span></label>
+          <input type="text" id="inp-cpf" placeholder="000.000.000-00" maxlength="14" autocomplete="off" inputmode="numeric">
+        </div>
+
+        <div id="form-err" class="err" style="display:none"></div>
+
+        <!-- Aviso LGPD / privacidade -->
+        <div class="lgpd-aviso">
+          <span class="lgpd-ico">🔐</span>
+          <span>Seus dados são protegidos e usados apenas para processar este pagamento. Não compartilhamos com terceiros.</span>
+        </div>
+
+        <button class="btn-md" id="btn-gerar" onclick="gerarPix()">
+          Gerar QR Code Pix agora
+          <span class="btn-md-sub">🔒 Pagamento processado com segurança</span>
+        </button>
+
+        <div class="garantia-form">
+          🛡️ <span><strong>Garantia de 7 dias:</strong> se não gostar, devolvemos 100% do valor. Sem perguntas.</span>
+        </div>
       </div>
-      <p style="font-size:.82rem;color:var(--n4);line-height:1.72;max-width:320px;margin:.8rem auto 0">Se não chegar em 48h, verifique a pasta de <strong>spam</strong> ou nos chame em<br><strong>contato@dividazero.com.br</strong></p>
-      <p style="margin-top:1.2rem;font-size:.88rem;color:var(--g3);font-weight:700">Obrigado pela confiança! 💚</p>
-    </div>
+
+      <!-- STEP 2: PIX -->
+      <div class="step" id="step2">
+
+        <div class="pix-header">
+          <div class="pix-titulo">Pague com Pix</div>
+          <p class="pix-sub">Abra o app do seu banco → Pix → Ler QR Code<br>ou copie o código abaixo</p>
+        </div>
+
+        <!-- Tabs QR / Copiar -->
+        <div class="pix-tabs">
+          <button class="pix-tab ativo" id="tab-qr" onclick="mudarTab('qr')">📷 QR Code</button>
+          <button class="pix-tab" id="tab-copy" onclick="mudarTab('copy')">📋 Copiar código</button>
+        </div>
+
+        <!-- Painel QR -->
+        <div class="pix-qr-panel show" id="panel-qr">
+          <div class="qr-wrap">
+            <div class="qr-border">
+              <img id="qr-img" src="" alt="QR Code Pix">
+            </div>
+            <p class="qr-instrucao">Escaneie com a câmera do celular<br>ou pelo app do banco</p>
+          </div>
+        </div>
+
+        <!-- Painel Copiar -->
+        <div class="pix-copy-panel" id="panel-copy">
+          <p class="copy-instrucao">Copie o código abaixo e cole no campo <strong>Pix Copia e Cola</strong> do seu banco:</p>
+          <div class="copy-box" id="copy-box" onclick="copiarPix()" title="Toque para copiar">Aguardando código…</div>
+          <button class="btn-copy" onclick="copiarPix()">📋 Copiar código Pix</button>
+        </div>
+
+        <!-- Cronômetro -->
+        <div class="pix-timer-wrap">
+          ⏱ Pix válido por: <span class="pix-timer" id="pix-timer">30:00</span>
+        </div>
+
+        <!-- Status -->
+        <div class="status pend" id="status-box">
+          <span class="loader"></span> Aguardando confirmação do pagamento…
+        </div>
+
+        <!-- Mini selos -->
+        <div class="pix-selos">
+          <div class="pix-selo">🔒 Pix seguro</div>
+          <div class="pix-selo">⚡ Confirmação automática</div>
+          <div class="pix-selo">🛡️ 7 dias de garantia</div>
+        </div>
+      </div>
+
+      <!-- STEP 3: CONFIRMADO -->
+      <div class="step" id="step3">
+        <div class="confirm-wrap">
+          <div class="confirm-ico">✅</div>
+          <div class="confirm-titulo">Pagamento confirmado!</div>
+          <p style="font-size:.88rem;color:#374151;margin-bottom:.5rem">Seu acesso está sendo preparado.</p>
+
+          <div class="confirm-card">
+            <div class="confirm-card-titulo">📦 Próximos passos</div>
+            <div class="confirm-steps">
+              <div class="confirm-step">
+                <div class="confirm-step-num">1</div>
+                <span>Acesse a caixa de entrada do e-mail cadastrado</span>
+              </div>
+              <div class="confirm-step">
+                <div class="confirm-step-num">2</div>
+                <span>Você receberá o link de acesso em <strong>até 24–48h úteis</strong></span>
+              </div>
+              <div class="confirm-step">
+                <div class="confirm-step-num">3</div>
+                <span>Clique no link e acesse todo o material imediatamente</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="confirm-email">
+            Não chegou? Verifique o <strong>spam</strong>.<br>
+            Dúvidas: <a href="mailto:contato@dividazero.com.br">contato@dividazero.com.br</a>
+          </p>
+          <p style="margin-top:1.2rem;font-size:.88rem;color:var(--g3);font-weight:700">Obrigado pela confiança! 💚</p>
+        </div>
+      </div>
+
+    </div><!-- /modal-body -->
   </div>
 </div>
 
@@ -1071,7 +1227,7 @@ function abrirCheckout(p){
   document.getElementById("inp-email").value="";
   document.getElementById("inp-cpf").value="";
   const btn=document.getElementById("btn-gerar");
-  btn.disabled=false;btn.textContent="Gerar QR Code Pix →";
+  btn.disabled=false;btn.innerHTML="Gerar QR Code Pix agora<span class=\"btn-md-sub\">🔒 Pagamento processado com segurança</span>";
   document.getElementById("modal").classList.add("ativo");
   document.body.style.overflow="hidden";
   if(typeof fbq!=="undefined") fbq('track','InitiateCheckout',{content_name:PLANOS[p].nome,value:PLANOS[p].num,currency:'BRL'});
@@ -1081,6 +1237,7 @@ function closeModal(){
   document.getElementById("modal").classList.remove("ativo");
   document.body.style.overflow="";
   if(chkTimer) clearInterval(chkTimer);
+  if(pixTimerInterval) clearInterval(pixTimerInterval);
 }
 
 function showStep(id){
@@ -1096,17 +1253,66 @@ document.getElementById("inp-cpf").addEventListener("input",function(){
   this.value=v;
 });
 
+// ── TABS PIX ──
+function mudarTab(tipo){
+  document.getElementById("panel-qr").classList.remove("show");
+  document.getElementById("panel-copy").classList.remove("show");
+  document.getElementById("tab-qr").classList.remove("ativo");
+  document.getElementById("tab-copy").classList.remove("ativo");
+  if(tipo==="qr"){
+    document.getElementById("panel-qr").classList.add("show");
+    document.getElementById("tab-qr").classList.add("ativo");
+  } else {
+    document.getElementById("panel-copy").classList.add("show");
+    document.getElementById("tab-copy").classList.add("ativo");
+  }
+}
+
+// ── TIMER PIX (30 minutos) ──
+let pixTimerInterval=null;
+function iniciarTimerPix(){
+  if(pixTimerInterval) clearInterval(pixTimerInterval);
+  let seg=30*60;
+  const el=document.getElementById("pix-timer");
+  pixTimerInterval=setInterval(()=>{
+    if(seg<=0){clearInterval(pixTimerInterval);if(el) el.textContent="Expirado";return;}
+    const m=Math.floor(seg/60),s=seg%60;
+    if(el) el.textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+    seg--;
+  },1000);
+}
+
+// ── REALCE DE ERRO NO INPUT ──
+function setInputErro(id,msg){
+  const inp=document.getElementById(id);
+  if(inp) inp.classList.add("erro-input");
+  const err=document.getElementById("form-err");
+  err.textContent=msg; err.style.display="flex";
+}
+function limparErros(){
+  ["inp-nome","inp-email","inp-cpf"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.classList.remove("erro-input");
+  });
+  const err=document.getElementById("form-err");
+  err.style.display="none";
+}
+// Limpar erro ao digitar
+["inp-nome","inp-email","inp-cpf"].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el) el.addEventListener("input",()=>{el.classList.remove("erro-input");document.getElementById("form-err").style.display="none";});
+});
+
 async function gerarPix(){
   const nome=document.getElementById("inp-nome").value.trim();
   const email=document.getElementById("inp-email").value.trim();
   const cpf=document.getElementById("inp-cpf").value.trim();
-  const err=document.getElementById("form-err");
   const btn=document.getElementById("btn-gerar");
-  err.style.display="none";
-  if(nome.length<3){err.textContent="Digite seu nome completo.";err.style.display="block";return;}
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent="Digite um e-mail válido.";err.style.display="block";return;}
-  if(cpf.replace(/\D/g,"").length!==11){err.textContent="CPF inválido — precisa ter 11 dígitos.";err.style.display="block";return;}
-  btn.disabled=true;btn.textContent="Gerando Pix…";
+  limparErros();
+  if(nome.length<3){setInputErro("inp-nome","⚠ Digite seu nome completo.");return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){setInputErro("inp-email","⚠ Digite um e-mail válido.");return;}
+  if(cpf.replace(/\D/g,"").length!==11){setInputErro("inp-cpf","⚠ CPF inválido — precisa ter 11 dígitos.");return;}
+  btn.disabled=true;btn.innerHTML='<span class="loader"></span> Gerando Pix…';
   try{
     const res=await fetch("/api/criar-pix",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({plano,nome,email,cpf})});
     const ct=res.headers.get("content-type")||"";
@@ -1118,7 +1324,7 @@ async function gerarPix(){
     document.getElementById("copy-box").textContent=data.copyPaste;
     document.getElementById("status-box").className="status pend";
     document.getElementById("status-box").innerHTML='<span class="loader"></span> Aguardando confirmação…';
-    showStep("step2");
+    showStep("step2");iniciarTimerPix();mudarTab("qr");
     if(typeof fbq!=="undefined") fbq('track','AddPaymentInfo',{content_name:PLANOS[plano].nome,value:PLANOS[plano].num,currency:'BRL'});
     if(chkTimer) clearInterval(chkTimer);
     chkTimer=setInterval(checarPix,5000);
