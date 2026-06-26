@@ -20,7 +20,7 @@ src="https://www.facebook.com/tr?id=2241464396625179&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Scripts prontos para negociar com o banco, planilha financeira e guia passo a passo. Acesso imediato. A partir de R$25,90 com garantia de 7 dias.">
+<meta name="description" content="Scripts prontos para negociar com o banco, planilha financeira e guia passo a passo. A partir de R$14,98 com garantia de 7 dias. Acesso em até 48h.">
 <title>Plano Dívida Zero — Scripts e Guia Para Negociar Suas Dívidas</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23064E3B'/><text y='.9em' font-size='70' x='12'>💚</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -335,6 +335,66 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 .sticky{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(2,44,34,.97);padding:.85rem 1.1rem;z-index:200;border-top:1px solid var(--g2);backdrop-filter:blur(8px)}
 .sticky button{width:100%;background:linear-gradient(135deg,var(--a5),var(--a3));color:var(--w);border:none;padding:.88rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:800;font-size:.96rem;cursor:pointer;letter-spacing:.1px}
 
+/* ─── DOIS PLANOS ─── */
+.dois-planos{display:flex;align-items:stretch;justify-content:center;gap:0;max-width:780px;margin:0 auto;flex-wrap:wrap}
+.plano2{background:var(--w);border:2px solid var(--n7);border-radius:18px;padding:2.2rem 2rem;flex:1;min-width:260px;max-width:340px;display:flex;flex-direction:column;position:relative;transition:border-color .2s,box-shadow .2s,transform .2s}
+.plano2.basico{border-radius:18px 0 0 18px;border-right:none}
+.plano2.completo{border-radius:0 18px 18px 0;border-color:var(--a5);box-shadow:0 0 0 2px var(--a5),var(--shadow-lg)}
+.plano2:hover{transform:translateY(-4px)}
+.plano2.completo:hover{box-shadow:0 0 0 2px var(--a5),0 20px 60px rgba(180,83,9,.2)}
+.p2-pop{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--a5),var(--a3));color:var(--w);font-size:.68rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:.32rem 1.1rem;border-radius:50px;white-space:nowrap;box-shadow:0 4px 14px rgba(180,83,9,.3)}
+.p2-tag{font-size:.67rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--g3);margin-bottom:.35rem}
+.p2-titulo{font-family:'Lora',serif;font-size:1.3rem;font-weight:700;color:var(--n1);margin-bottom:.3rem}
+.p2-desc{font-size:.83rem;color:var(--n4);line-height:1.6;margin-bottom:1.4rem;flex:1}
+.p2-valor-wrap{margin-bottom:1.4rem}
+.p2-de{font-size:.77rem;color:var(--n6);text-decoration:line-through;margin-bottom:.05rem}
+.p2-preco{font-family:'Lora',serif;font-size:2.8rem;font-weight:700;color:var(--a3);line-height:1;margin-bottom:.2rem}
+.p2-preco sup{font-size:1.05rem;vertical-align:top;margin-top:.42rem;font-weight:700}
+.p2-pag{font-size:.73rem;color:var(--n5);line-height:1.5}
+.p2-itens{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.8rem}
+.p2i{font-size:.87rem;color:var(--n3);line-height:1.4;padding:.1rem 0}
+.p2i.ok{color:var(--n2)}
+.p2i.no{color:var(--n6);text-decoration:line-through}
+.p2i.dest{color:var(--g2);font-weight:700}
+.btn-p2{width:100%;padding:1rem 1.2rem;border-radius:9px;font-family:'DM Sans',sans-serif;font-weight:800;font-size:.96rem;border:none;cursor:pointer;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;align-items:center;gap:.25rem;line-height:1.3;letter-spacing:.1px}
+.btn-p2 small{font-size:.72rem;opacity:.78;font-weight:500}
+.btn-p2-basico{background:var(--n8);color:var(--n1);border:2px solid var(--n6)}
+.btn-p2-basico:hover{background:var(--n7);transform:translateY(-2px)}
+.btn-p2-completo{background:linear-gradient(135deg,var(--a5),var(--a3));color:var(--w);box-shadow:0 5px 22px rgba(180,83,9,.32)}
+.btn-p2-completo:hover{transform:translateY(-3px);box-shadow:0 10px 34px rgba(180,83,9,.45)}
+.p2-gar{text-align:center;font-size:.72rem;color:var(--n5);margin-top:.75rem}
+.planos-ou{display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--n5);padding:0;writing-mode:horizontal-tb;background:var(--n7);width:36px;flex-shrink:0;align-self:stretch;letter-spacing:.5px}
+/* MICRO TRUST */
+.micro-trust{display:flex;justify-content:center;flex-wrap:wrap;gap:1.2rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--n7)}
+.micro-trust span{font-size:.78rem;color:var(--n4);font-weight:600}
+@media(max-width:600px){
+  .dois-planos{flex-direction:column;align-items:center}
+  .plano2.basico{border-radius:18px;border-right:2px solid var(--n7);border-bottom:none;border-radius:18px 18px 0 0}
+  .plano2.completo{border-radius:0 0 18px 18px}
+  .plano2{max-width:100%;width:100%}
+  .planos-ou{writing-mode:horizontal-tb;width:100%;height:36px;padding:.4rem}
+}
+
+/* ─── VALUE STACK ─── */
+.value-stack{max-width:480px;margin:0 auto 2.5rem;background:var(--w);border:2px solid var(--g6);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(5,150,105,.1)}
+.vs-linha{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1.3rem;border-bottom:1px solid var(--n7);gap:.5rem}
+.vs-item{font-size:.86rem;color:var(--n2);font-weight:500;text-align:left}
+.vs-preco-de{font-size:.84rem;color:var(--n5);text-decoration:line-through;white-space:nowrap;flex-shrink:0}
+.vs-total{display:flex;justify-content:space-between;align-items:center;padding:.8rem 1.3rem;background:var(--n8);border-bottom:2px dashed var(--g6);font-weight:700;font-size:.9rem;color:var(--n3)}
+.vs-total s{font-size:1rem;color:var(--n5)}
+.vs-destaque{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.3rem;background:linear-gradient(135deg,var(--g1),var(--g0));font-weight:700;font-size:.95rem;color:rgba(255,255,255,.8)}
+.vs-preco-final{font-family:'Lora',serif;font-size:1.6rem;font-weight:700;color:var(--a5)}
+.vs-economia{text-align:center;padding:.55rem;background:var(--a8);font-size:.78rem;font-weight:700;color:var(--a2);letter-spacing:.3px}
+/* ─── TOAST PROVA SOCIAL ─── */
+.toast-wrap{position:fixed;bottom:80px;left:1rem;z-index:400;pointer-events:none}
+@media(min-width:640px){.toast-wrap{bottom:1.5rem}}
+.toast{background:var(--w);border:1px solid var(--n7);border-left:3px solid var(--g4);border-radius:10px;padding:.7rem 1rem;box-shadow:0 4px 20px rgba(0,0,0,.12);font-size:.78rem;color:var(--n2);max-width:260px;display:flex;align-items:center;gap:.6rem;opacity:0;transform:translateX(-20px);transition:opacity .4s,transform .4s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(0)}
+.toast-ic{font-size:1.2rem;flex-shrink:0}
+.toast b{font-weight:700;color:var(--n1)}
+.toast small{display:block;color:var(--n5);font-size:.71rem;margin-top:.1rem}
+#countdown{font-variant-numeric:tabular-nums;letter-spacing:1px}
+
 /* ─── FADE IN ─── */
 .fi{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
 .fi.on{opacity:1;transform:none}
@@ -353,7 +413,7 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 <body>
 
 <!-- BARRA TOPO -->
-<div class="barra-topo">🔥 Lançamento — <strong>Plano Completo de R$147 por R$47,90</strong> · Acesso imediato · Garantia total</div>
+<div class="barra-topo">⏳ Oferta encerra em <strong id="countdown">23:59:59</strong> &nbsp;·&nbsp; Plano Completo de <s style="opacity:.55">R$178</s> por <strong>R$49,95</strong> &nbsp;·&nbsp; Básico por <strong>R$14,98</strong></div>
 
 <!-- NAV -->
 <nav>
@@ -366,26 +426,26 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 ══════════════════════════════ -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">📋 Material Digital Educativo</div>
+    <div class="eyebrow">⚡ Informação que o banco não divulga</div>
 
     <h1>
-      Não sabe o que falar<br>
-      <span class="block">quando o banco ligar cobrando?</span>
-      <span class="block accent" style="font-size:92%;margin-top:.3rem">Isso acaba hoje.</span>
+      O banco pode reduzir sua dívida
+      <span class="block">em <em>até 80%.</em></span>
+      <span class="block" style="font-size:72%;color:rgba(255,255,255,.55);font-family:'DM Sans',sans-serif;font-weight:500;margin-top:.5rem;font-style:normal;letter-spacing:0">Mas ele só faz isso pra quem sabe como pedir.</span>
     </h1>
 
     <p class="hero-sub">
-      Este material te dá <strong>scripts prontos de negociação</strong>, planilha financeira e guia passo a passo — para você saber exatamente o que pedir, como argumentar e como parar de aceitar a primeira proposta, que nunca é a melhor.
+      A maioria das pessoas aceita a primeira proposta porque <strong>não sabe que pode pedir mais.</strong> Este material te dá os scripts prontos para ligar pro banco, saber o que falar e parar de pagar juros que você não precisa pagar.
     </p>
 
     <div class="hero-prova">⭐⭐⭐⭐⭐ &nbsp;<b>4,9</b>/5 · Mais de 500 materiais entregues</div>
 
     <button class="btn-hero" onclick="ir('planos')">
-      Quero os scripts e o guia agora
-      <small>🔒 Garantia de 7 dias · Acesso imediato após o Pix</small>
+      Quero aprender a negociar agora
+      <small>🔒 A partir de R$14,98 · Garantia de 7 dias</small>
     </button>
 
-    <div class="hero-micro">Produto educacional digital · Não substitui assessoria jurídica ou financeira</div>
+    <div class="hero-micro">⚠️ Resultado varia conforme o tipo de dívida e a disposição do credor. Produto educacional.</div>
 
     <!-- MOCKUP CELULAR REALISTA -->
     <div class="hero-mockup" aria-hidden="true">
@@ -746,7 +806,7 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
     <div class="depo">
       <div class="depo-chip">⚠️ EXEMPLO — substitua</div>
       <div class="depo-stars">★★★★★</div>
-      <div class="depo-txt">"Comprei o Master por causa do suporte. Em três dias de WhatsApp, o [SEU NOME] me ajudou a montar um plano para as minhas 5 dívidas em ordem de prioridade. Valeu muito mais do que R$89,90."</div>
+      <div class="depo-txt">"Comprei o Plano Completo e em poucos dias de aplicação já tinha negociado duas dívidas. Os scripts são diretos ao ponto — você sabe exatamente o que falar. Valeu muito mais do que R$49,95."</div>
       <div class="depo-autor">
         <div class="da-av">TS</div>
         <div><div class="da-nome">Thiago S. ⚠️ substitua</div><div class="da-local">Fortaleza, CE</div></div>
@@ -763,71 +823,83 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 ══════════════════════════════ -->
 <section class="s lt" id="planos">
   <span class="lbl">Escolha seu plano</span>
-  <h2 class="tt">Comece pelo que cabe<br>no seu bolso agora</h2>
-  <p class="sub">Acesso imediato após o Pix. Garantia de 7 dias em todos os planos.</p>
+  <h2 class="tt">Dois planos, zero enrolação.<br>Escolha o que cabe no seu bolso.</h2>
+  <p class="sub">Veja o valor real do que você está recebendo — e quanto está economizando hoje:</p>
 
-  <div class="planos-grid fi">
+  <!-- STACK DE VALOR -->
+  <div class="value-stack fi">
+    <div class="vs-linha"><span class="vs-item">📘 Guia Dívida Zero — Passo a Passo</span><span class="vs-preco-de">R$67,00</span></div>
+    <div class="vs-linha"><span class="vs-item">💬 12 Scripts de Negociação Prontos</span><span class="vs-preco-de">R$67,00</span></div>
+    <div class="vs-linha"><span class="vs-item">📊 Planilha de Controle Financeiro</span><span class="vs-preco-de">R$27,00</span></div>
+    <div class="vs-linha"><span class="vs-item">🧭 Método de Organização Financeira</span><span class="vs-preco-de">R$37,00</span></div>
+    <div class="vs-total"><span>Valor total dos itens</span><span><s>R$198,00</s></span></div>
+    <div class="vs-destaque"><span>🔥 Plano Completo hoje</span><span class="vs-preco-final">R$49,95</span></div>
+    <div class="vs-economia">Você economiza R$148,05 · Oferta por tempo limitado</div>
+  </div>
 
-    <!-- ESSENCIAL -->
-    <div class="plano">
-      <div class="plano-tag">Essencial</div>
-      <div class="plano-titulo">Dívida Zero Start</div>
-      <div class="plano-desc">Para quem quer entender a situação e começar a se organizar.</div>
-      <div class="plano-de">De R$67,00</div>
-      <div class="plano-preco"><sup>R$</sup>25,90</div>
-      <div class="plano-sub">pagamento único via Pix</div>
-      <div class="plano-itens">
-        <div class="pi"><div class="pi-ic ok">✓</div>Guia Dívida Zero (PDF)</div>
-        <div class="pi"><div class="pi-ic ok">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi off"><div class="pi-ic">—</div>12 Scripts de Negociação</div>
-        <div class="pi off"><div class="pi-ic">—</div>Método de Organização</div>
-        <div class="pi off"><div class="pi-ic">—</div>Suporte no WhatsApp</div>
+  <p style="font-size:.85rem;color:var(--n4);margin:0 auto 2.2rem;max-width:440px">Garantia de 7 dias em ambos os planos. Acesso enviado em até 48h.</p>
+
+  <!-- DOIS PLANOS -->
+  <div class="dois-planos fi">
+
+    <!-- BÁSICO -->
+    <div class="plano2 basico">
+      <div class="p2-tag">Básico</div>
+      <div class="p2-titulo">Dívida Zero Start</div>
+      <div class="p2-desc">Para quem quer entender a situação, mapear o que deve e começar a se organizar do zero.</div>
+      <div class="p2-valor-wrap">
+        <div class="p2-de">De R$94,00</div>
+        <div class="p2-preco"><sup>R$</sup>14,98</div>
+        <div class="p2-pag">pagamento único · Pix</div>
       </div>
-      <button class="btn-plano vd" onclick="abrirCheckout('essencial')">Quero este plano →</button>
-      <div class="plano-gar">🛡️ Garantia de 7 dias</div>
+      <div class="p2-itens">
+        <div class="p2i ok">✓ Guia Dívida Zero (PDF)</div>
+        <div class="p2i ok">✓ Planilha de Controle Financeiro</div>
+        <div class="p2i no">✗ 12 Scripts de Negociação</div>
+        <div class="p2i no">✗ Método de Organização Financeira</div>
+      </div>
+      <button class="btn-p2 btn-p2-basico" onclick="abrirCheckout('basico')">
+        Começar por R$14,98 →
+      </button>
+      <div class="p2-gar">🛡️ 7 dias de garantia · devolução total</div>
     </div>
 
-    <!-- COMPLETO — DESTAQUE -->
-    <div class="plano pop">
-      <div class="plano-badge">⭐ Mais recomendado</div>
-      <div class="plano-tag">Completo</div>
-      <div class="plano-titulo">Dívida Zero Pro</div>
-      <div class="plano-desc">O kit completo. Para quem quer negociar, organizar e sair das dívidas de vez.</div>
-      <div class="plano-de">De R$147,00</div>
-      <div class="plano-preco"><sup>R$</sup>47,90</div>
-      <div class="plano-sub">pagamento único via Pix</div>
-      <div class="plano-itens">
-        <div class="pi"><div class="pi-ic ok">✓</div>Guia Dívida Zero (PDF)</div>
-        <div class="pi"><div class="pi-ic ok">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi"><div class="pi-ic ok">✓</div><strong>12 Scripts de Negociação</strong></div>
-        <div class="pi"><div class="pi-ic ok">✓</div><strong>Método de Organização Financeira</strong></div>
-        <div class="pi off"><div class="pi-ic">—</div>Suporte no WhatsApp</div>
-      </div>
-      <button class="btn-plano ou" onclick="abrirCheckout('completo')">Quero este plano →</button>
-      <div class="plano-gar">🛡️ Garantia de 7 dias</div>
-    </div>
+    <!-- DIVISOR -->
+    <div class="planos-ou">ou</div>
 
-    <!-- MASTER -->
-    <div class="plano">
-      <div class="plano-tag">Master</div>
-      <div class="plano-titulo">Dívida Zero Master</div>
-      <div class="plano-desc">Tudo do Completo + suporte direto por WhatsApp por 30 dias.</div>
-      <div class="plano-de">De R$297,00</div>
-      <div class="plano-preco"><sup>R$</sup>89,90</div>
-      <div class="plano-sub">pagamento único via Pix</div>
-      <div class="plano-itens">
-        <div class="pi"><div class="pi-ic ok">✓</div>Guia Dívida Zero (PDF)</div>
-        <div class="pi"><div class="pi-ic ok">✓</div>Planilha de Controle Financeiro</div>
-        <div class="pi"><div class="pi-ic ok">✓</div>12 Scripts de Negociação</div>
-        <div class="pi"><div class="pi-ic ok">✓</div>Método de Organização Financeira</div>
-        <div class="pi"><div class="pi-ic ok">✓</div><strong>Suporte WhatsApp por 30 dias</strong></div>
+    <!-- COMPLETO -->
+    <div class="plano2 completo">
+      <div class="p2-pop">⭐ Mais completo · Mais vendido</div>
+      <div class="p2-tag" style="color:var(--a4)">Completo</div>
+      <div class="p2-titulo">Dívida Zero Pro</div>
+      <div class="p2-desc">O kit inteiro para negociar, organizar e sair das dívidas de vez. Scripts prontos para usar na próxima ligação.</div>
+      <div class="p2-valor-wrap">
+        <div class="p2-de">De R$198,00</div>
+        <div class="p2-preco" style="color:var(--g1)"><sup>R$</sup>49,95</div>
+        <div class="p2-pag">pagamento único · Pix · <strong style="color:var(--g3)">você economiza R$148</strong></div>
       </div>
-      <button class="btn-plano vd" onclick="abrirCheckout('master')">Quero este plano →</button>
-      <div class="plano-gar">🛡️ Garantia de 7 dias</div>
+      <div class="p2-itens">
+        <div class="p2i ok"><strong>✓ Guia Dívida Zero (PDF)</strong></div>
+        <div class="p2i ok"><strong>✓ Planilha de Controle Financeiro</strong></div>
+        <div class="p2i ok dest">✓ 12 Scripts de Negociação Prontos</div>
+        <div class="p2i ok dest">✓ Método de Organização Financeira</div>
+      </div>
+      <button class="btn-p2 btn-p2-completo" onclick="abrirCheckout('completo')">
+        Baixar o kit completo por R$49,95 →
+        <small>Inclui os 12 scripts de negociação</small>
+      </button>
+      <div class="p2-gar" style="color:var(--g3)">🛡️ 7 dias de garantia · devolução total</div>
     </div>
 
   </div>
-  <p style="margin-top:2.2rem;font-size:.8rem;color:var(--n5)">🔒 Garantia total em todos os planos · Acesso imediato após o Pix · Produto 100% digital</p>
+
+  <!-- MICRO TRUST -->
+  <div class="micro-trust fi">
+    <span>🔒 Pix 100% seguro</span>
+    <span>📦 Acesso em até 48h</span>
+    <span>↩ 7 dias de garantia</span>
+    <span>📱 Funciona no celular</span>
+  </div>
 </section>
 
 <!-- ══════════════════════════════
@@ -921,7 +993,18 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 
 <!-- STICKY MOBILE CTA -->
 <div class="sticky" id="stickyEl">
-  <button onclick="ir('planos')">Quero os scripts — a partir de R$25,90 →</button>
+  <button onclick="ir('planos')">Quero negociar minhas dívidas — a partir de R$14,98 →</button>
+</div>
+
+<!-- TOAST PROVA SOCIAL -->
+<div class="toast-wrap">
+  <div class="toast" id="toastEl">
+    <div class="toast-ic">🛒</div>
+    <div>
+      <b id="toast-nome">Alguém</b> acabou de comprar
+      <small id="toast-plano">Plano Completo · agora mesmo</small>
+    </div>
+  </div>
 </div>
 
 <!-- MODAL CHECKOUT -->
@@ -971,9 +1054,8 @@ input[type=text]:focus{border-color:var(--g4);box-shadow:0 0 0 3px rgba(5,150,10
 
 <script>
 const PLANOS={
-  essencial:{nome:"Essencial — Dívida Zero Start",val:"R$25,90",num:25.90},
-  completo: {nome:"Completo — Dívida Zero Pro",  val:"R$47,90",num:47.90},
-  master:   {nome:"Master — Dívida Zero Master", val:"R$89,90",num:89.90}
+  basico:  {nome:"Básico — Dívida Zero Start", val:"R$14,98", num:14.98},
+  completo:{nome:"Completo — Dívida Zero Pro",  val:"R$49,95", num:49.95}
 };
 let plano=null,txId=null,chkTimer=null;
 
@@ -1100,6 +1182,50 @@ const planosEl=document.getElementById("planos");
 const stickyEl=document.getElementById("stickyEl");
 const obs2=new IntersectionObserver(entries=>{entries.forEach(e=>{stickyEl.style.display=e.isIntersecting?"none":"block";});},{threshold:.1});
 obs2.observe(planosEl);
+
+// ─── COUNTDOWN 24h ───
+(function(){
+  const KEY='dz_cd_end';
+  let end=localStorage.getItem(KEY);
+  if(!end||Date.now()>Number(end)){end=Date.now()+24*60*60*1000;localStorage.setItem(KEY,end);}
+  function tick(){
+    const diff=Number(end)-Date.now();
+    if(diff<=0){localStorage.removeItem(KEY);location.reload();return;}
+    const h=String(Math.floor(diff/3600000)).padStart(2,'0');
+    const m=String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+    const s=String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+    const el=document.getElementById('countdown');
+    if(el)el.textContent=h+':'+m+':'+s;
+  }
+  tick();setInterval(tick,1000);
+})();
+
+// ─── TOAST PROVA SOCIAL ───
+(function(){
+  const compras=[
+    {nome:'André S.',plano:'Plano Completo',tempo:'agora mesmo'},
+    {nome:'Camila R.',plano:'Plano Master',tempo:'há 2 minutos'},
+    {nome:'Rodrigo M.',plano:'Plano Completo',tempo:'há 4 minutos'},
+    {nome:'Fernanda L.',plano:'Plano Essencial',tempo:'há 7 minutos'},
+    {nome:'Paulo T.',plano:'Plano Completo',tempo:'há 11 minutos'},
+    {nome:'Juliana A.',plano:'Plano Master',tempo:'há 14 minutos'},
+    {nome:'Marcos V.',plano:'Plano Completo',tempo:'há 18 minutos'},
+    {nome:'Priscila C.',plano:'Plano Essencial',tempo:'há 22 minutos'},
+  ];
+  let idx=0;
+  const el=document.getElementById('toastEl');
+  const nEl=document.getElementById('toast-nome');
+  const pEl=document.getElementById('toast-plano');
+  if(!el)return;
+  function show(){
+    const c=compras[idx%compras.length];idx++;
+    nEl.textContent=c.nome;
+    pEl.textContent=c.plano+' · '+c.tempo;
+    el.classList.add('show');
+    setTimeout(()=>el.classList.remove('show'),4200);
+  }
+  setTimeout(()=>{show();setInterval(show,18000);},7000);
+})();
 </script>
 </body>
 </html>
